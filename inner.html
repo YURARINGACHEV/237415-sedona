@@ -2,12 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="//fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
     <title>Седона: гостиницы</title>
   </head>
   <body>
     <header class="page-header">
         <div class="header-top">
-            <nav class="navigation">
+          <div class="logo">
+            <a href="index.html">
+              <img src="http://placehold.it/150x100" alt="Логотип">
+            </a>
+          </div>
+          <nav class="navigation">
               <ul>
                 <li>
                   <a href="#">Информация</a>
@@ -27,11 +34,7 @@
     </header>
     <main class="main-container">
         <section claas="title-sedona">
-            <div class="logo">
-              <a href="index.html">
-                <img src="http://placehold.it/150x100" alt="Логотип">
-              </a>
-            </div><section class="produce-product">
+          <section class="produce-product">
             <form action="https://echo.htmlacademy.ru" method="post">
                  <div class="info-item">
                         <h2>Инфраструктура:</h2>
@@ -64,13 +67,16 @@
                         </label>
                     </div>
                      <div class="info-item">
-                        <h2>Стоимость жилья (р.):</h2>
-                        </label>
-                          От
-                          <input type="text" value="от 0">
-                        <label>
-                          До
-                          <input type="text" value="от 3000">
+                       <label>
+                          <h2>Стоимость жилья (р.):</h2>
+                          <label>
+                            От
+                            <input type="text" value="от 0">
+                          </label>
+                          <label>
+                            До
+                            <input type="text" value="от 3000">
+                          </label>
                         </label>
                         <div class="control">Бегунок</div>
                         <input type="submit" value="Показать">
@@ -81,9 +87,9 @@
                     <b>Найдено: 3</b>
                     <p>Сортировка</p>
                     <div class="text-item">
-                        <p>По цене</p>
-                        <p>по типу</p>
-                        <p>по рейтингу</p>
+                        <span>По цене</span>
+                        <span>по типу</span>
+                        <span>по рейтингу</span>
                         <div class="control-item">
                           <span></span>
                           <span></span>
