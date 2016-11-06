@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="page-header">
-        <div class="header-top">
+        <div class="header-top  container">
           <div class="logo">
             <a href="index.html">
               <img src="img/logo.png" width="138" height="70" alt="Логотип">
@@ -32,8 +32,9 @@
         </div>
     </header>
     <main class="main-container">
-          <section class="produce-product">
-            <div class="title-sedona">
+          <section class="produce-product clearfix">
+            <div class="container">
+            <div class="-sedona-title">
                 <img src="img/filter-background-1.jpg"  width="1200" height="273" alt="СЕДОНА">
             </div>
             <form action="https://echo.htmlacademy.ru" method="post">
@@ -84,26 +85,32 @@
                         <input type="submit" value="Показать">
                     </div>
                 </form>
+              </div>
             </section>
-            <div class="text">
+            <div class="main-text clearfix">
+              <div class="container">
+                <div class="text">
                     <b>Найдено: 3</b>
-                    <p>Сортировка</p>
+                    <span>Сортировка</span>
+                  </div>
                     <div class="text-item">
                         <span>По цене</span>
                         <span>по типу</span>
                         <span>по рейтингу</span>
-                        <div class="control-item">
-                          <span></span>
-                          <span></span>
-                        </div>
-                     </div>
-               </div>
-            <section class="container">
-                 <article>
+                    </div>
+                    <div class="control-item">
+                      <span>регулировка</span>
+                      <span>регулировка</span>
+                    </div>
+                  </div>
+                </div>
+            <section class="holder">
+              <div class="container">
+                 <article class="holder-item">
                       <a href="#">
-                          <figure>
+                          <div>
                               <img src="img/amara-resort-&-spa.jpg" width="135" height="90">
-                            </figure>
+                            </div>
                           <h2 class="aside">
                             Amara resort & spa
                           </h2>
@@ -119,11 +126,11 @@
                             <span>Рейтинг:8,5<span>
                         </div>
                  </article>
-                <article>
+                 <article class="holder-item">
                     <a href="">
-                        <figure>
+                        <div>
                             <img src="img/desert-quail-inn.jpg" width="135" height="90">
-                          </figure>
+                          </div>
                           <h2 class="aside">
                             Desert quail inn
                           </h2>
@@ -139,11 +146,11 @@
                           <span>Рейтинг:8,9<span>
                       </div>
                 </article>
-                <article>
+                <article class="holder-item">
                    <a href="">
-                        <figure>
+                        <div>
                             <img src="img/villas-at-poco-diablo.jpg" width="135" height="90">
-                          </figure>
+                          </div>
                         <h2 class="aside">
                           Villas at poco diablo
                         </h2>
@@ -159,10 +166,11 @@
                           <span>Рейтинг:9,2<span>
                       </div>
                 </article>
+              </div>
             </section>
         </main>
         <footer class="main-footer">
-            <div class="box">
+            <div class="box clearfix">
               <div class="footer-sedona">
                 <a href="#">#VISITSEDONA</a>
               </div>

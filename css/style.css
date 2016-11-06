@@ -1,14 +1,207 @@
 body {
-    color: #333333;
-    line-height: 21px;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-weight: normal;
-    font-size: 14px;
+  color: #333333;
+  line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  width: 1200px;
 }
 h2 {
-    color: #000000;
-    line-height: 26px;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 21px;
+  color: #000000;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1056px;
+  background: green;
+}
+
+.page-header {
+  position: relative;
+  min-height: 56px;
+  background: yellow;
+}
+
+.logo {
+  position: relative;
+  left: 530px;
+  top: 0;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.title-sedona {
+  margin-top: 50px;
+  background: yellow;
+  min-height: 824px;
+}
+
+.title {
+    background: yellow;
+    width: 576px;
+    margin: 0 auto;
+}
+
+.container-item {
+  width: 1200px;
+  background: green;
+}
+
+.info-city {
+  float: left;
+  width: 400px;
+  background: yellow;
+}
+
+.img-city {
+  float: left;
+}
+
+.features {
+  min-height: 330px;
+  background: red;
+  font-size: 0;
+}
+
+.features-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  background: yellow;
+  font-size: 14px;
+}
+
+.main-bridge {
+  float: left;
+}
+
+.info-bridge {
+  float: left;
+  width: 400px;
+  background: yellow;
+}
+
+.benefits {
+  min-height: 257px;
+  background: red;
+  font-size: 0;
+}
+
+.benefits-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  background: yellow;
+  font-size: 14px;
+}
+
+.meta-sedona {
+  min-height: 485px;
+  background: blue;
+}
+
+.meta-item {
+  margin: 0 auto;
+  min-height: 485px;
+  width: 568px;
+  background: yellow;
+}
+
+.produce-product {
+  min-height: 218px;
+  background: blue;
+}
+
+.info-item {
+  float: left;
+  background: yellow;
+}
+
+.info-item:last-child {
+  float: right;
+}
+
+.main-text {
+  min-height: 86px;
+  background: red;
+  font-size: 0;
+}
+
+.text {
+  display: inline-block;
+  vertical-align: top;
+  width: 240px;
+  background: yellow;
+  font-size: 14px;
+}
+
+.text-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 288px;
+  background: yellow;
+  font-size: 14px;
+}
+
+.control-item {
+  float: right;
+  width: 288px;
+  background: blue;
+  font-size: 14px;
+}
+
+.holder {
+  min-height: 454px;
+  background: red;
+}
+
+.holder-item {
+  min-height: 153px;
+  background: yellow;
+
+}
+
+
+
+.main-footer {
+  background: green;
+  padding: 36px 72px;
+}
+
+.box {
+  background: red;
+}
+
+.footer-sedona {
+  float: left;
+  margin-right: 88px;
+  text-align: center;
+  width: 240px;
+  background: yellow;
+}
+
+.footer-social {
+  float: left;
+  text-align: center;
+  width: 400px;
+  background: yellow;
+}
+
+.icon-html {
+  float: right;
+  text-align: center;
+  width: 240px;
+  background: yellow;
 }
