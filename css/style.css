@@ -27,19 +27,25 @@ h2 {
 }
 
 .page-header {
-  position: relative;
   min-height: 56px;
   background: yellow;
 }
 
 .logo {
   position: relative;
-  left: 530px;
+  left: 460px;
   top: 0;
+}
+
+.header-top {
+  font-size: 0;
 }
 
 .navigation li {
   display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .title-sedona {
@@ -49,9 +55,9 @@ h2 {
 }
 
 .title {
-    background: yellow;
-    width: 576px;
-    margin: 0 auto;
+  background: yellow;
+  width: 576px;
+  margin: 0 auto;
 }
 
 .container-item {
@@ -83,7 +89,7 @@ h2 {
   font-size: 14px;
 }
 
-.main-bridge {
+.img-bridge {
   float: left;
 }
 
@@ -133,7 +139,7 @@ h2 {
   float: right;
 }
 
-.main-text {
+.text-container {
   min-height: 86px;
   background: red;
   font-size: 0;
@@ -170,10 +176,20 @@ h2 {
 .holder-item {
   min-height: 153px;
   background: yellow;
-
 }
 
+.aside img {
+  float: left;
+}
 
+.aside-item{
+  float: left;
+  width: 260px;
+}
+
+.pic {
+  float:right;
+}
 
 .main-footer {
   background: green;
