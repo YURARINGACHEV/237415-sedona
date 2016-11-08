@@ -37,13 +37,14 @@ h2 {
   top: 0;
 }
 
-.header-top {
+nav {
   font-size: 0;
 }
 
 .navigation li {
   display: inline-block;
   vertical-align: top;
+  font-size: 0;
   font-size: 14px;
   line-height: 24px;
 }
@@ -87,16 +88,6 @@ h2 {
   width: 400px;
   background: yellow;
   font-size: 14px;
-}
-
-.img-bridge {
-  float: left;
-}
-
-.info-bridge {
-  float: left;
-  width: 400px;
-  background: yellow;
 }
 
 .benefits {
@@ -174,17 +165,18 @@ h2 {
 }
 
 .holder-item {
+  float: left;
+  width: 1056px;
   min-height: 153px;
   background: yellow;
 }
 
-.aside img {
+.holder-item img {
   float: left;
 }
 
-.aside-item{
+.aside-item {
   float: left;
-  width: 260px;
 }
 
 .pic {
