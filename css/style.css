@@ -1,10 +1,11 @@
 body {
+  min-width: 1200px;
   color: #333333;
   line-height: 21px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
-  width: 1200px;
+  text-transform: uppercase;
 }
 h2 {
   color: #000000;
@@ -22,31 +23,34 @@ h2 {
 
 .container {
   margin: 0 auto;
-  width: 1056px;
-  background: green;
+  width: 1200px;
 }
 
 .page-header {
+  position: relative;
   min-height: 56px;
   background: yellow;
 }
 
 .logo {
-  position: relative;
-  left: 460px;
+  position: absolute;
+  left: 600px;
   top: 0;
 }
 
-nav {
+.navigation ul {
   font-size: 0;
 }
 
 .navigation li {
   display: inline-block;
   vertical-align: top;
-  font-size: 0;
   font-size: 14px;
   line-height: 24px;
+}
+
+.main-container {
+  width: 1200px;
 }
 
 .title-sedona {
@@ -77,6 +81,7 @@ nav {
 }
 
 .features {
+  width: 1200px;
   min-height: 330px;
   background: red;
   font-size: 0;
@@ -91,6 +96,7 @@ nav {
 }
 
 .benefits {
+  width: 1200px;
   min-height: 257px;
   background: red;
   font-size: 0;
@@ -104,7 +110,12 @@ nav {
   font-size: 14px;
 }
 
+.section-sedona {
+  width: 1200px;
+}
+
 .meta-sedona {
+  width: 1200px;
   min-height: 485px;
   background: blue;
 }
@@ -184,8 +195,9 @@ nav {
 }
 
 .main-footer {
+  width: 1200px;
   background: green;
-  padding: 36px 72px;
+
 }
 
 .box {
