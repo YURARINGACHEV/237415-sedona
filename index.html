@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="page-header">
-        <div class="header-top">
+        <div class="header-top container">
           <div class="logo">
               <img src="img/logo.png" width="138" height="70" alt="Логотип">
           </div>
@@ -29,21 +29,23 @@
             </nav>
         </div>
     </header>
-    <main class="main-container">
+    <main class="main-container container">
         <div claas="title-sedona">
             <div class="page-sedona">
                 <img src="img/page-sedona.jpg"  width="1200" height="564" alt="СЕДОНА">
             </div>
-            <h2>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <p>Расмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+            <aside class="title">
+              <h2>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
+              <p>Расмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+            </aside>
         </div>
-        <article class="container-item">
+        <article class="container-item clearfix">
             <div class="info-city">
             <h2>Настоящий городок</h2>
             <p>№1</p>
             <p>Седона &mdash; не атракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div claas="img-city">
+          <div class="img-city">
             <img src="img/img-city-1.jpg" width="800" height="256">
           </div>
         </article>
@@ -61,11 +63,11 @@
               <p>Не только китайского, но и местного производства!</p>
             </div>
         </div>
-        <article class="content-city">
-            <div claas="img-bridge">
-              <img src="img/img-mountain-1.jpg" width="800" height="256">
-            </div>
-            <div class="info-bridge">
+        <article class="container-item clearfix">
+              <div class="img-city">
+                <img src="img/img-mountain-1.jpg" width="800" height="256">
+              </div>
+            <div class="info-city">
               <h2>Там есть мост дьявола</h2>
               <p>№2</p>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -78,7 +80,7 @@
               <p>Все достопримечательности находятся очень близко</p>
           </div>
           <div class="benefits-item">
-              <h2>Красивая дорога/h2>
+              <h2>Красивая дорога</h2>
               <p>№4</p>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
@@ -89,13 +91,13 @@
           </div>
         </div>
       <div class="section-sedona">
-        <div class="section">
+        <div class="title">
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиницы в Седоне</p>
         </div>
       </div>
       <section class="meta-sedona">
-        <div claas="meta-item">
+        <div class="meta-item">
             <a href="#">Поиск гостиницы в Седоне</a>
             <form action="https://echo.htmlacademy.ru" method="post">
               <div class="meta-data">
@@ -112,7 +114,7 @@
                     Дети:<input type="text" name="total">
                   </label>
                   <div class="meta-btn">
-                    <input type="submit" value="НАЙТИ">
+                    <input type="submit" value="Найти">
                   </div>
               </div>
             </form>
@@ -122,8 +124,9 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
-        <div class="box">
+    <footer class="main-footer container">
+      <div class="">
+        <div class="box clearfix">
           <div class="footer-sedona">
             <a href="#">#Visitsedona</a>
           </div>
@@ -138,6 +141,7 @@
             <a href="https://htmlacademy.ru/">
               <img src="img/HTML-113-39.png" alt="Логотип">
             </a>
+          </div>
         </div>
       </div>
     </footer>
