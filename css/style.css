@@ -29,7 +29,8 @@ h2 {
 .page-header {
   position: relative;
   min-height: 56px;
-  background: yellow;
+  background: #ffffff;
+  z-index: 2;
 }
 
 .logo {
@@ -39,7 +40,11 @@ h2 {
 }
 
 .navigation ul {
+  margin: 0;
+  padding: 0;
   font-size: 0;
+  font-weight: bold;
+  list-style: none;
 }
 
 .navigation li {
@@ -49,39 +54,77 @@ h2 {
   line-height: 24px;
 }
 
-.main-container {
-  width: 1200px;
+.navigation li:nth-child(2) {
+  padding-right: 140px;
+  margin-right: 100px;
+}
+
+.navigation a {
+  display: block;
+  padding: 20px 75px;
+  color:#000000;
+  text-decoration: none;
 }
 
 .title-sedona {
-  margin-top: 50px;
-  background: yellow;
   min-height: 824px;
 }
 
-.title {
-  background: yellow;
-  width: 576px;
-  margin: 0 auto;
+.page-sedona {
+  margin-bottom: 60px;
+  height: 555px;
+  background: url("../img/page-sedona.jpg") no-repeat center top;
 }
 
-.container-item {
-  width: 1200px;
-  background: green;
+.page-sedona img {
+  padding: 70px 368px;
+}
+
+.title {
+  text-align: center;
+  width: 546px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.title h2 {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.title p {
+  color:#333333;
 }
 
 .info-city {
   float: left;
   width: 400px;
-  background: yellow;
+  color: #ffffff;
+  text-align: center;
+  background-color: #81b3d2;
+}
+
+.info-city h2 {
+  display: inline-block;
+  padding: 0 80px;
+  margin-top: 53px;
+  padding-top: 12px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.info-city p {
+  padding-bottom: 25px;
 }
 
 .img-city {
   float: left;
+  width: 800;
+  height: 256;
 }
 
 .features {
-  width: 1200px;
+  text-align: center;
   min-height: 330px;
   background: red;
   font-size: 0;
@@ -89,43 +132,180 @@ h2 {
 
 .features-item {
   display: inline-block;
+  position: relative;
   vertical-align: top;
   width: 400px;
-  background: yellow;
+  background: #eeeeee;
   font-size: 14px;
 }
 
+.features-item:nth-child(1)::before {
+ content: "";
+ position: absolute;
+ top: 60px;
+ left: 162px;
+ display: block;
+ width: 70px;
+ height: 70px;
+ background-image: url("../img/icon-2.png");
+ background-repeat: no-repeat;
+}
+
+.features-item:nth-child(2)::before {
+ content: "";
+ position: absolute;
+ top: 60px;
+ left: 162px;
+ display: block;
+ width: 80px;
+ height: 70px;
+ background-image: url("../img/icon-3.png");
+ background-repeat: no-repeat;
+}
+
+.features-item:nth-child(3)::before {
+  content: "";
+ position: absolute;
+ top: 60px;
+ left: 162px;
+ display: block;
+ width: 70px;
+ height: 80px;
+ background-image: url("../img/icon-1.png");
+  background-repeat: no-repeat;
+}
+
+.features-item h2 {
+  display: block;
+  margin-top: 25px;
+  padding-top: 130px;
+  margin-bottom: 30px;
+}
+
+.features-item p {
+  display:block;
+  margin-bottom: 30px;
+  padding: 0 40px;
+  padding-bottom: 55px;
+}
+
 .benefits {
-  width: 1200px;
   min-height: 257px;
-  background: red;
+  text-align: center;
   font-size: 0;
+  margin-bottom: 50px;
 }
 
 .benefits-item {
   display: inline-block;
   vertical-align: top;
   width: 400px;
-  background: yellow;
+  background: #eeeeee;
   font-size: 14px;
+
 }
 
-.section-sedona {
-  width: 1200px;
+.benefits-item h2 {
+  display: block;
+  margin: 0 120px;
+  margin-top: 20px;
+  padding-top: 30px;
+}
+
+.benefits-item p {
+  display: block;
+  margin: 0 40px;
+  padding-top: 30px;
+}
+
+.benefits-item p:last-child {
+  margin-bottom: 65px;
+}
+
+.title-item {
+  margin-bottom: 135px;
 }
 
 .meta-sedona {
-  width: 1200px;
-  min-height: 485px;
-  background: blue;
+  position: relative;
 }
 
 .meta-item {
+  position: absolute;
+  top: -65px;
+  left: 317px;
   margin: 0 auto;
   min-height: 485px;
-  width: 568px;
-  background: yellow;
+  width: 570px;
+  background: #ffffff;
 }
+
+.meta-item a {
+  display: block;
+  padding: 20px 200px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #766357;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.appointment-form {
+  margin-top: 55px;
+
+}
+
+.meta-data {
+  margin-left: 65px;
+  margin-right: 50px;
+}
+
+.appointment-form input{
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 10px 0;
+  margin-left: 25px;
+  border: none;
+  background-color: #f2f2f2;
+
+}
+
+.appointment-form input[type=date] {
+  width: 322px;
+  height: 38px;
+
+}
+
+.appointment-form input[type=text] {
+  width: 117px;
+  height: 38px;
+}
+
+.meta-btn input {
+  display: block;
+  padding: 18px 200px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  vertical-align: top;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none;
+}
+
 
 .produce-product {
   min-height: 218px;
@@ -176,7 +356,7 @@ h2 {
 }
 
 .holder-item {
-  float: left;
+
   width: 1056px;
   min-height: 153px;
   background: yellow;
@@ -195,33 +375,73 @@ h2 {
 }
 
 .main-footer {
-  width: 1200px;
-  background: green;
-
+  padding-bottom: 40px;
+  color: #000000;
+  background: #ffffff;
 }
 
 .box {
-  background: red;
+  font-size: 0;
 }
 
 .footer-sedona {
-  float: left;
-  margin-right: 88px;
+  display: inline-block;
+  vertical-align: top;
   text-align: center;
-  width: 240px;
-  background: yellow;
+  font-size: 21px;
+  width: 341px;
+  padding: 50px 0;
+  color: #262626;
+}
+
+.footer-sedona a {
+  color: #000000;
+  text-decoration: none;
 }
 
 .footer-social {
-  float: left;
+  display: inline-block;
+  vertical-align: top;
   text-align: center;
-  width: 400px;
-  background: yellow;
+  width: 525px;
+  padding: 39px 0;
 }
 
+.social-btn {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  background: #81b3d2;
+}
+
+.social-btn:hover {
+  background-color: #669ec0;
+}
 .icon-html {
-  float: right;
+  display: inline-block;
+  vertical-align: top;
   text-align: center;
-  width: 240px;
-  background: yellow;
+  width: 310px;
+  padding: 36px 0;
+  font-size: 14px;
+  color: #6a6a69;
+}
+
+.icon-html p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+.icon-html img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-html img:hover {
+  background-color: #81b3d2;
 }
