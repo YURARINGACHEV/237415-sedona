@@ -28,12 +28,11 @@ h2 {
 
 .page-header {
   position: relative;
-  min-height: 56px;
   background: #ffffff;
   z-index: 2;
 }
 
-.logo {
+/*.logo {
   position: absolute;
   left: 600px;
   top: 0;
@@ -65,6 +64,47 @@ h2 {
   color:#000000;
   text-decoration: none;
 }
+*/
+
+.header-top {
+  padding: 0 6%;
+}
+
+.logo {
+  position: absolute;
+  left: 530px;
+  top: 0;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  font-weight: bold;
+  list-style: none;
+}
+
+.navigation li {
+  float: left;
+  padding: 23px 0;
+  width: 20%;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.navigation li:nth-child(3),
+.navigation li:nth-child(4) {
+  float: right;
+}
+
+.navigation a {
+  color:#000000;
+  text-decoration: none;
+}
+
+.right {
+  float: right;
+}
 
 .title-sedona {
   min-height: 824px;
@@ -88,8 +128,7 @@ h2 {
 }
 
 .title h2 {
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .title p {
@@ -107,8 +146,7 @@ h2 {
 .info-city h2 {
   display: inline-block;
   padding: 0 80px;
-  margin-top: 53px;
-  padding-top: 12px;
+  margin-top: 65px;
   margin-bottom: 10px;
   color: #ffffff;
 }
@@ -119,8 +157,8 @@ h2 {
 
 .img-city {
   float: left;
-  width: 800;
-  height: 256;
+  width: 800px;
+  height: 256px;
 }
 
 .features {
@@ -308,41 +346,148 @@ h2 {
 
 
 .produce-product {
-  min-height: 218px;
-  height: 217px;
   background-image: url("../img/filter-background-1.jpg");
   background-repeat: no-repeat;
 }
 
 .info-item {
-  float: left;
-  margin: 0 73px;
-  margin-top: 25px;
-  padding-bottom: 23px;
-  color: #ffffff;
+  margin: 0 6%;
 }
 
-.info-item h2 {
-  color: #ffffff;
+.filter-range {
+ float: left;
+ margin: 50px auto; /* для демо */
+ color: #ffffff;
+ text-transform: uppercase;
 }
 
-.info-item input {
+.filter-range:nth-child(1) {
+  width: 20%;
+  margin-right: 15px;
+}
+
+.filter-range:nth-child(2) {
+  width: 20%;
+}
+
+.filter-range:nth-child(3) {
+  float: right;
+  width: 330px;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-range input {
   margin-bottom: 23px;
   background-color: transparent;
 }
 
-.info-item:last-child {
-  float: right;
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
 }
 
-.info-item input[type=submit] {
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
   color: #ffffff;
-  margin-left: 135px;
-  background-color: transparent;
-  height: 33px;
-  width: 135px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
 
 .text-container {
   float: left;
@@ -504,19 +649,47 @@ h2 {
 }
 
 .social-btn {
+  position: relative;
   display: inline-block;
+  vertical-align: top;
   width: 43px;
   height: 43px;
   margin: 0 2px;
   font-size: 0;
-  vertical-align: top;
   text-decoration: none;
   background: #81b3d2;
+}
+
+.social-btn::befor {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.social-btn-vk::before {
+  width: 12px;
+  height: 22px;
+  background-position: -10px -124px;
+}
+
+.social-btn-fb {
+
+  background-position: -10px -124px;
+}
+
+.social-btn-youtube {
+
+  background-position: -10px -520px;
 }
 
 .social-btn:hover {
   background-color: #669ec0;
 }
+
 .icon-html {
   display: inline-block;
   vertical-align: top;
@@ -540,4 +713,70 @@ h2 {
 
 .icon-html img:hover {
   background-color: #81b3d2;
+}
+
+.sprite {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-1icon-login {
+    width: 18px;
+    height: 16px;
+    background-position: -10px -10px;
+}
+
+.sprite-check {
+    width: 26px;
+    height: 22px;
+    background-position: -10px -46px;
+}
+
+.sprite-contact-icon {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -88px;
+}
+
+.sprite-facebook-icon {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -124px;
+}
+
+.sprite-foto-icon {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -166px;
+}
+
+.sprite-icon-1 {
+    width: 64px;
+    height: 76px;
+    background-position: -10px -207px;
+}
+
+.sprite-icon-2 {
+    width: 75px;
+    height: 72px;
+    background-position: -10px -303px;
+}
+
+.sprite-icon-3 {
+    width: 74px;
+    height: 70px;
+    background-position: -10px -395px;
+}
+
+.sprite-icon-tw {
+    width: 17px;
+    height: 15px;
+    background-position: -10px -485px;
+}
+
+.sprite-icon-yt {
+    width: 20px;
+    height: 16px;
+    background-position: -10px -520px;
 }

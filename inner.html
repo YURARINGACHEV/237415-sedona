@@ -9,14 +9,14 @@
     <title>Седона: гостиницы</title>
   </head>
   <body>
-    <header class="page-header">
-        <div class="header-top  container">
+    <header class="page-header container">
+        <div class="header-top clearfix">
           <div class="logo">
             <a href="index.html">
               <img src="img/logo.png" width="138" height="70" alt="Логотип">
             </a>
           </div>
-          <nav class="navigation">
+          <nav class="navigation clearfix">
               <ul>
                 <li>
                   <a href="#">Информация</a>
@@ -25,10 +25,10 @@
                   <a href="#">Фото и видео</a>
                 </li>
                 <li>
-                  <a href="#">карта штата</a>
+                  <a class="right">Гостиницы</a>
                 </li>
                 <li>
-                  <a>Гостиницы</a>
+                  <a class="right" href="#">карта штата</a>
                 </li>
               </ul>
             </nav>
@@ -36,9 +36,9 @@
     </header>
     <main class="main-container  container clearfix">
           <section class="produce-product clearfix">
-              <form class="clearfix" action="https://echo.htmlacademy.ru" method="post">
-                  <div class="info-item">
-                      <h2>Инфраструктура:</h2>
+              <form class="info-item clearfix" action="https://echo.htmlacademy.ru" method="post">
+                  <div class="filter-range">
+                      <div class="filter-range-title">Инфраструктура:</div>
                       <label>
                         <input type="checkbox" name="pool">
                           Бассейн
@@ -54,8 +54,8 @@
                           Wi-Fi
                       </label>
                   </div>
-                  <div class="info-item">
-                      <h2>Тип жилья:</h2>
+                  <div class="filter-range">
+                      <div class="filter-range-title">Тип жилья:</div>
                       <label>
                         <input type="checkbox" name="Hotel">
                           Гостиница
@@ -71,21 +71,20 @@
                           Апартаменты
                       </label>
                   </div>
-                  <div class="info-item">
-                    <h2>Стоимость жилья (р.):</h2>
-                    <label>
-                        От
-                        <input type="text" value="0">
-                      </label>
-                    <label>
-                        До
-                        <input type="text" value="3000">
-                      </label>
-                    <div class="control">
-                      <div></div>
-                      <div></div>
+                  <div class="filter-range">
+                    <div class="filter-range-title">Стоимость в сутки (р):</div>
+                    <div class="price-controls">
+                      <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                      <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                     </div>
-                    <input type="submit" value="Показать">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="range-toggle range-toggle-min"></div>
+                      <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                    <button class="btn-transparent" type="submit">Показать</button>
                   </div>
                 </form>
             </section>
@@ -178,9 +177,9 @@
               </div>
               <section class="footer-social">
                 <p>Давайте дружить!</p>
-                <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                <a class="sprite social-btn social-btn-vk" href="#">Вконтакте</a>
                 <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                <a class="social-btn social-btn-youtube" href="#">ЮТУБ</a>
+                <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
               </section>
               <div class="icon-html">
                 <p> WEBSITE BY</p>
