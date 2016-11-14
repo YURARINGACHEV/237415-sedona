@@ -32,10 +32,15 @@ h2 {
   z-index: 2;
 }
 
-/*.logo {
+.header-top {
+  padding: 0 6%;
+}
+
+.logo {
   position: absolute;
-  left: 600px;
+  left: 50%;
   top: 0;
+  margin-left: -69px;
 }
 
 .navigation ul {
@@ -49,27 +54,27 @@ h2 {
 .navigation li {
   display: inline-block;
   vertical-align: top;
+  padding: 17px 0;
+  width: 20%;
   font-size: 14px;
   line-height: 24px;
 }
 
 .navigation li:nth-child(2) {
-  padding-right: 140px;
-  margin-right: 100px;
+  margin-right: 211px;
+}
+
+.navigation li:nth-child(3),
+.navigation li:nth-child(4) {
+  text-align: right;
 }
 
 .navigation a {
-  display: block;
-  padding: 20px 75px;
   color:#000000;
   text-decoration: none;
 }
-*/
 
-.header-top {
-  padding: 0 6%;
-}
-
+/*
 .logo {
   position: absolute;
   left: 530px;
@@ -105,7 +110,7 @@ h2 {
 .right {
   float: right;
 }
-
+*/
 .title-sedona {
   min-height: 824px;
 }
