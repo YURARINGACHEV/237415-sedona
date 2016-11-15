@@ -11,7 +11,7 @@ h2 {
   color: #000000;
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: bold;
+  font-weight: 510;
   font-size: 21px;
 }
 
@@ -153,11 +153,12 @@ h2 {
   text-align: center;
   width: 546px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .title h2 {
   margin-bottom: 30px;
+
 }
 
 .title p {
@@ -166,7 +167,7 @@ h2 {
 
 .info-city {
   float: left;
-  padding-bottom: 19px;
+  padding-bottom: 24px;
   width: 400px;
   color: #ffffff;
   text-align: center;
@@ -176,9 +177,11 @@ h2 {
 .info-city h2 {
   display: inline-block;
   width: 160px;
-  padding: 0 80px;
-  margin-top: 50px;
+  margin-top: 55px;
   margin-bottom: 10px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 530;
   color: #ffffff;
 }
 
@@ -203,7 +206,7 @@ h2 {
   position: relative;
   vertical-align: top;
   width: 400px;
-  background: #eeeeee;
+  background: #ffffff;
   font-size: 14px;
 }
 
@@ -213,8 +216,8 @@ h2 {
  top: 60px;
  left: 162px;
  display: block;
- width: 70px;
- height: 70px;
+ width: 755px;
+ height: 75px;
  background-image: url("../img/icon-2.png");
  background-repeat: no-repeat;
 }
@@ -245,9 +248,12 @@ h2 {
 
 .features-item h2 {
   display: block;
-  margin-top: 25px;
+  margin-top: 23px;
   padding-top: 130px;
   margin-bottom: 30px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 530;
 }
 
 .features-item p {
@@ -278,13 +284,16 @@ h2 {
   margin: 0 120px;
   margin-top: 15px;
   padding-top: 30px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 510;
 }
 
 .benefits-item p {
   display: block;
   margin: 0 40px;
   padding: 0 30px;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .benefits-item p:last-child {
@@ -299,6 +308,7 @@ h2 {
   padding-bottom: 5px;
   font-size: 30px;
   line-height: 24px;
+  font-weight: 510;
   color: #000000;
 }
 
@@ -333,12 +343,22 @@ h2 {
 }
 
 .appointment-form {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .meta-data {
-  margin-left: 65px;
+  margin-left: 55px;
   margin-right: 50px;
+}
+
+.appointment-form label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.meta-data .out {
+  margin-left: -4px;
 }
 
 .appointment-form input {
@@ -348,18 +368,19 @@ h2 {
   color: #000000;
   text-transform: uppercase;
   margin: 15px 0;
-  margin-left: 20px;
+  margin-left: 18px;
   border: none;
   background-color: #f2f2f2;
 }
 
 .appointment-form input[type=date] {
-  width: 297px;
+  position: relative;
+  width: 322px;
   height: 38px;
   padding-right: 30px;
   background-image: url("../img/calendar.png");
   background-repeat: no-repeat;
-  background-position: 300px;
+  background-position: 325px;
 }
 
 .appointment-form input:hover {
@@ -379,21 +400,23 @@ h2 {
 
 .adult input[type=text] {
   position: relative;
-  margin: 0 35px;
+  margin-left: 37px;
+  margin-right: 50px;
 }
 
 .children input[type=text] {
-  margin-left: 25px;
+  margin-left: 30px;
 }
 
 .meta-btn input {
   display: block;
-  padding: 18px 200px;
+  padding: 16px 203px;
   margin: 0 auto;
   margin-bottom: 56px;
+  margin-top: 38px;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 21px;
+  line-height: 26px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   vertical-align: top;
   color: #ffffff;
@@ -410,6 +433,8 @@ h2 {
   background-color: #5496bd;
   color: rgba(136, 182, 209, 1);
 }
+
+/* вторая страница*/
 
 .produce-product {
   background-image: url("../img/filter-background-1.jpg");
@@ -443,6 +468,10 @@ h2 {
 
 .filter-range-title {
   margin-bottom: 25px;
+
+}
+
+.filter-range .filter-range-title {
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -613,7 +642,65 @@ h2 {
 }
 
 .control-item span {
-  color: #81b3d2;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+  font-size: 0;
+  text-decoration: none;
+}
+
+.control-item span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -913px;
+}
+
+.control-item span:hover::before {
+  width: 11px;
+  height: 10px;
+  background-position: -10px -973px;
+}
+
+.control-item span:active::before {
+  width: 11px;
+  height: 10px;
+  background-position: -10px -943px;
+}
+
+
+.control-item span:last-child::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -675px;
+}
+
+.control-item span:last-child:hover::before {
+  width: 11px;
+  height: 10px;
+  background-position: -10px -735px;
+}
+
+.control-item span:last-child:active::before {
+  width: 11px;
+  height: 10px;
+  background-position: -10px -705px;
 }
 
 .holder {
@@ -712,6 +799,28 @@ h2 {
   margin-right: 0;
 }
 
+.pic span:last-child {
+  display:block;
+  margin-top: 50px;
+}
+
+.pic .stars {
+  display: inline-block;
+  width: 89px;
+  height: 17px;
+  background-position: -10px -1321px;
+  background-image: url("../img/sprite.png");
+}
+
+.pic .stars-item-2 {
+  margin-left: 40px;
+  width: 49px;
+}
+
+.pic .stars-item-3 {
+  margin-left: 20px;
+  width: 69px;
+  }
 .main-footer {
   color: #000000;
   background: #ffffff;
@@ -768,23 +877,40 @@ h2 {
 }
 
 .social-btn-vk::before {
-  padding: auto;
-  width: 18px;
-  height: 18px;
-  background-image: url("../img/icon-tw.png");
-  background-repeat: no-repeat;
+  width: 17px;
+  height: 15px;
+  background-position: -10px -843px;
+}
+
+.social-btn-vk:active::before {
+  width: 17px;
+  height: 15px;
+  background-position: -10px -878px;
 }
 
 .social-btn-fb::before {
-  width: 12px;
-  height: 22px;
-  background-position: -10px -124px;
+  width: 10px;
+  height: 19px;
+  background-position: -10px -765px;
 }
 
+.social-btn-fb:active::before {
+  width: 10px;
+  height: 19px;
+  background-position: -10px -804px;
+}
+
+
 .social-btn-youtube::before {
-  width: 22px;
-  height: 20px;
-  background-position: -10px -520px;
+  width: 20px;
+  height: 16px;
+  background-position: -10px -1003px;
+}
+
+.social-btn-youtube:active::before {
+  width: 20px;
+  height: 16px;
+  background-position: -10px -1039px;
 }
 
 .social-btn:hover {
@@ -817,75 +943,207 @@ h2 {
 }
 
 .icon-html img:hover {
-  background-color: #81b3d2;
+  background-image: url("../img/html-hover-h.png")
 }
 
 .icon-html img:active {
-  background-color: #5496bd;
-}
 
+}
+/*Спрайты*/
 .sprite {
-    background-image: url("../img/sprite.png");
+    background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
 
-.sprite-1icon-login {
-    width: 18px;
-    height: 16px;
+.sprite-calendar {
+    width: 21px;
+    height: 22px;
     background-position: -10px -10px;
+}
+
+.sprite-calendar-active {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -52px;
+}
+
+.sprite-calendar-hover {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -94px;
 }
 
 .sprite-check {
     width: 26px;
     height: 22px;
-    background-position: -10px -46px;
+    background-position: -10px -136px;
 }
 
-.sprite-contact-icon {
-    width: 25px;
-    height: 16px;
-    background-position: -10px -88px;
-}
-
-.sprite-facebook-icon {
-    width: 12px;
+.sprite-check-hover {
+    width: 26px;
     height: 22px;
-    background-position: -10px -124px;
+    background-position: -10px -178px;
 }
 
-.sprite-foto-icon {
-    width: 21px;
-    height: 21px;
-    background-position: -10px -166px;
+.sprite-html {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -220px;
+}
+
+.sprite-html-active {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -279px;
+}
+
+.sprite-html-hover {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -338px;
 }
 
 .sprite-icon-1 {
     width: 64px;
     height: 76px;
-    background-position: -10px -207px;
+    background-position: -10px -397px;
 }
 
 .sprite-icon-2 {
     width: 75px;
     height: 72px;
-    background-position: -10px -303px;
+    background-position: -10px -493px;
 }
 
 .sprite-icon-3 {
     width: 74px;
     height: 70px;
-    background-position: -10px -395px;
+    background-position: -10px -585px;
+}
+
+.sprite-icon-down {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -675px;
+}
+
+.sprite-icon-down-active {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -705px;
+}
+
+.sprite-icon-down-hover {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -735px;
+}
+
+.sprite-icon-fb {
+    width: 10px;
+    height: 19px;
+    background-position: -10px -765px;
+}
+
+.sprite-icon-fb-active {
+    width: 10px;
+    height: 19px;
+    background-position: -10px -804px;
 }
 
 .sprite-icon-tw {
     width: 17px;
     height: 15px;
-    background-position: -10px -485px;
+    background-position: -10px -843px;
+}
+
+.sprite-icon-tw-active {
+    width: 17px;
+    height: 15px;
+    background-position: -10px -878px;
+}
+
+.sprite-icon-up {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -913px;
+}
+
+.sprite-icon-up-active {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -943px;
+}
+
+.sprite-icon-up-hover {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -973px;
 }
 
 .sprite-icon-yt {
     width: 20px;
     height: 16px;
-    background-position: -10px -520px;
+    background-position: -10px -1003px;
+}
+
+.sprite-icon-yt-active {
+    width: 20px;
+    height: 16px;
+    background-position: -10px -1039px;
+}
+
+.sprite-minus {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -1075px;
+}
+
+.sprite-minus-active {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -1098px;
+}
+
+.sprite-minus-hover {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -1121px;
+}
+
+.sprite-no-check {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -1144px;
+}
+
+.sprite-no-check-hover {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -1186px;
+}
+
+.sprite-plus {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -1228px;
+}
+
+.sprite-plus-active {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -1259px;
+}
+
+.sprite-plus-hover {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -1290px;
+}
+
+.sprite-star {
+    width: 89px;
+    height: 17px;
+    background-position: -10px -1321px;
 }
