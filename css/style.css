@@ -374,13 +374,27 @@ h2 {
 }
 
 .appointment-form input[type=date] {
-  position: relative;
-  width: 322px;
+  width: 302px;
   height: 38px;
-  padding-right: 30px;
-  background-image: url("../img/calendar.png");
+  padding-left: 10px;
+  padding-right: 40px;
+}
+
+.appointment-form .date {
+  position: relative;
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: 325px;
+}
+
+.appointment-form .date::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 20px;
+  background-repeat: repeat;
+  background-position: -10px -10px;
 }
 
 .appointment-form input:hover {
@@ -821,6 +835,7 @@ h2 {
   margin-left: 20px;
   width: 69px;
   }
+
 .main-footer {
   color: #000000;
   background: #ffffff;
@@ -837,11 +852,14 @@ h2 {
   vertical-align: top;
   text-align: center;
   width: 33%;
-  padding: 43px 0;
+  padding: 40px 0;
   color: #262626;
 }
 
 .footer-sedona a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
   color: #000000;
   text-decoration: none;
 }
@@ -851,16 +869,15 @@ h2 {
   vertical-align: top;
   text-align: center;
   width: 33%;
-  padding: 35px 0;
+  padding: 30px 0;
 }
 
 .social-btn {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 43px;
-  height: 43px;
-  margin: 0 2px;
+  width: 45px;
+  height: 49px;
   font-size: 0;
   text-decoration: none;
   background: #81b3d2;
@@ -926,29 +943,50 @@ h2 {
   vertical-align: top;
   text-align: center;
   width: 33%;
-  padding: 32px 0;
-  font-size: 14px;
+  padding: 25px 0;
   color: #6a6a69;
 }
 
 .icon-html p {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 2px;
+  padding-right: 110px;
+  font-size: 14px;
+  line-height: 26px;
+
 }
 
-.icon-html img {
+.icon-html {
+  position: relative;
+}
+
+.html-academy {
+  position: absolute;
   display: inline-block;
   vertical-align: middle;
+  text-decoration: none;
+  top: 50%;
+  left: 240px;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 113px;
+  height: 39px;
+  background-position: -10px -220px;
 }
 
-.icon-html img:hover {
-  background-image: url("../img/html-hover-h.png")
+.html-academy:hover {
+  width: 113px;
+  height: 39px;
+  background-position: -10px -338px;
 }
 
-.icon-html img:active {
-
+.html-academy:active {
+  width: 113px;
+  height: 39px;
+  background-position: -10px -279px;
 }
+
 /*Спрайты*/
 .sprite {
     background-image: url(spritesheet.png);
