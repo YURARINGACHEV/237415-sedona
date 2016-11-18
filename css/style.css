@@ -61,12 +61,12 @@ h2 {
 }
 
 .navigation li:nth-child(2) {
-  margin-right: 211px;
-  text-indent: 20px;
+  margin-right: 20%;
+  text-indent: 28px;
 }
 
 .navigation li:nth-child(3) {
-  text-indent: 95px;
+  text-indent: 93px;
 }
 
 .navigation li:nth-child(4) {
@@ -331,6 +331,7 @@ h2 {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  word-spacing: 3px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
@@ -357,7 +358,7 @@ h2 {
   font-weight: bold;
 }
 
-.meta-data .out {
+.appointment-form .out {
   margin-left: -4px;
 }
 
@@ -368,13 +369,13 @@ h2 {
   color: #000000;
   text-transform: uppercase;
   margin: 15px 0;
-  margin-left: 18px;
+  margin-left: 25px;
   border: none;
   background-color: #f2f2f2;
 }
 
-.appointment-form input[type=date] {
-  width: 302px;
+.appointment-form input[type=month] {
+  width: 295px;
   height: 38px;
   padding-left: 10px;
   padding-right: 40px;
@@ -382,19 +383,31 @@ h2 {
 
 .appointment-form .date {
   position: relative;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
 }
 
 .appointment-form .date::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 95%;
+  width: 22px;
+  height: 22px;
   transform: translate(-50%, -50%);
-  margin-left: 20px;
-  background-repeat: repeat;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
   background-position: -10px -10px;
+}
+
+.appointment-form .date:hover::before {
+  width: 21px;
+  height: 22px;
+  background-position: -10px -94px;
+}
+
+.appointment-form .date:active::before {
+  width: 21px;
+  height: 22px;
+  background-position: -10px -52px;
 }
 
 .appointment-form input:hover {
@@ -407,19 +420,20 @@ h2 {
 }
 
 .appointment-form input[type=text] {
-  padding:0 10px;
-  width: 95px;
+  padding:0 15px;
+  text-align: center;
+  width: 85px;
   height: 38px;
 }
 
 .adult input[type=text] {
   position: relative;
-  margin-left: 37px;
+  margin-left: 40px;
   margin-right: 50px;
 }
 
 .children input[type=text] {
-  margin-left: 30px;
+  margin-left: 25px;
 }
 
 .meta-btn input {
@@ -431,6 +445,7 @@ h2 {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+/*  letter-spacing: 2px;*/
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   vertical-align: top;
   color: #ffffff;
@@ -451,24 +466,38 @@ h2 {
 /* вторая страница*/
 
 .produce-product {
+  position: relative;
+}
+
+.produce-product::after {
+  content: "";
+  top: -57px;
+  left: 0;
+  width: 100%;
+  height: 270px;
+  position: absolute;
   background-image: url("../img/filter-background-1.jpg");
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .info-item {
+  position: relative;
+  z-index: 2;
   margin: 0 6%;
 }
 
 .filter-range {
  float: left;
- margin: 30px auto;
+ margin: 25px auto;
+ margin-bottom: 15px;
  color: #ffffff;
  text-transform: uppercase;
 }
 
 .filter-range:nth-child(1) {
   width: 20%;
-  margin-right: 15px;
+  margin-right: 40px;
 }
 
 .filter-range:nth-child(2) {
@@ -482,18 +511,23 @@ h2 {
 
 .filter-range-title {
   margin-bottom: 25px;
-
 }
 
 .filter-range .filter-range-title {
-  font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
 }
 
-.filter-range input {
-  margin-bottom: 23px;
+.filter-range input[type=checkbox] {
+  margin-bottom: 30px;
+  padding-left: 15px;
   background-color: transparent;
+}
+
+.filter-range-item {
+  margin-bottom: 10px;
 }
 
 .price-controls {
@@ -598,10 +632,16 @@ h2 {
   background: #ffffff;
 }
 
+.main-text {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .text-container {
   float: left;
-  margin-top: 28px;
-  margin-bottom: 33px;
+  position: relative;
+  z-index: 5;
+  margin-top: 20px;
+  margin-bottom: 10px;
   border-bottom: 2px solid #fefefe;
   font-size: 0;
 }
@@ -609,21 +649,29 @@ h2 {
 .text {
   display: inline-block;
   vertical-align: top;
-  font-size: 14px;
 }
 
 .text b {
   margin-left: 73px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
 }
 .text span {
   margin-left: 50px;
   margin-right: 40px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
 }
 
 .text-item {
   display: inline-block;
   vertical-align: top;
-  font-size: 14px;
+  padding-top: 7px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
 }
 
 .text-item span {
@@ -659,8 +707,8 @@ h2 {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 43px;
-  height: 43px;
+  width: 15px;
+  height: 15px;
   margin: 0 2px;
   font-size: 0;
   text-decoration: none;
@@ -718,14 +766,15 @@ h2 {
 }
 
 .holder {
-  min-height: 454px;
+
+
 }
 
 .holder-item {
-  margin: 0 auto;
+  margin: 30px auto;
   width: 1056px;
-  min-height: 153px;
-  border-bottom: 2px solid #fefefe;
+  min-height: 120px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .holder-item img {
@@ -770,10 +819,11 @@ h2 {
 
 .block-btn a {
   display: inline-block;
-  padding: 2px 10px;
+  padding: 3px 15px;
   font-weight: bold;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 21px;
+  letter-spacing: 1px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   color: #ffffff;
   text-decoration: none;
@@ -950,7 +1000,7 @@ h2 {
 .icon-html p {
   display: inline-block;
   vertical-align: middle;
-  padding-right: 110px;
+  padding-right: 115px;
   font-size: 14px;
   line-height: 26px;
 
