@@ -162,12 +162,13 @@ h2 {
 }
 
 .title p {
+  margin-right:9px;
   color:#333333;
 }
 
 .info-city {
   float: left;
-  padding-bottom: 24px;
+  padding-bottom: 27px;
   width: 400px;
   color: #ffffff;
   text-align: center;
@@ -186,7 +187,8 @@ h2 {
 }
 
 .info-city p {
-  padding-bottom: 10px;
+  padding-bottom: 9px;
+
 }
 
 .img-city {
@@ -197,7 +199,6 @@ h2 {
 
 .features {
   text-align: center;
-  background: red;
   font-size: 0;
 }
 
@@ -237,8 +238,8 @@ h2 {
 .features-item:nth-child(3)::before {
   content: "";
  position: absolute;
- top: 60px;
- left: 162px;
+ top: 58px;
+ left: 167px;
  display: block;
  width: 70px;
  height: 80px;
@@ -249,8 +250,8 @@ h2 {
 .features-item h2 {
   display: block;
   margin-top: 23px;
-  padding-top: 130px;
-  margin-bottom: 30px;
+  padding-top: 140px;
+  margin-bottom: 23px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 530;
@@ -267,7 +268,7 @@ h2 {
   min-height: 257px;
   text-align: center;
   font-size: 0;
-  margin-bottom: 50px;
+  margin-bottom: 56px;
 }
 
 .benefits-item {
@@ -282,7 +283,7 @@ h2 {
 .benefits-item h2 {
   display: block;
   margin: 0 120px;
-  margin-top: 15px;
+  margin-top: 18px;
   padding-top: 30px;
   font-size: 21px;
   line-height: 21px;
@@ -293,11 +294,11 @@ h2 {
   display: block;
   margin: 0 40px;
   padding: 0 30px;
-  padding-top: 20px;
+  padding-top: 23px;
 }
 
 .benefits-item p:last-child {
-  margin-bottom: 65px;
+  margin-bottom: 58px;
 }
 
 .title-item {
@@ -305,11 +306,16 @@ h2 {
 }
 
 .title-item h2 {
-  padding-bottom: 5px;
   font-size: 30px;
   line-height: 24px;
   font-weight: 510;
   color: #000000;
+}
+
+.title-item p {
+  text-indent: 7px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .meta-sedona {
@@ -318,7 +324,7 @@ h2 {
 
 .meta-item {
   position: absolute;
-  top: -84px;
+  top: -87px;
   left: 317px;
   margin: 0 auto;
   width: 570px;
@@ -326,12 +332,13 @@ h2 {
 }
 
 .meta-item a {
-  display: block;
-  padding: 29px 150px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding: 30px 165px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  word-spacing: 3px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
@@ -340,17 +347,20 @@ h2 {
   background-color: #766357;
   border: none;
   cursor: pointer;
-  margin-bottom: 30px;
 }
 
 .appointment-form {
-  margin-top: 40px;
+  display: block;
+  width: 459px;
+  margin: 0 auto;
+  margin-top: 39px;
+
 }
 
 .meta-data {
-  margin-left: 55px;
-  margin-right: 50px;
+
 }
+
 
 .appointment-form label {
   font-size: 14px;
@@ -358,9 +368,6 @@ h2 {
   font-weight: bold;
 }
 
-.appointment-form .out {
-  margin-left: -4px;
-}
 
 .appointment-form input {
   font-size: 14px;
@@ -369,13 +376,17 @@ h2 {
   color: #000000;
   text-transform: uppercase;
   margin: 15px 0;
-  margin-left: 25px;
+  margin-left: 23px;
   border: none;
   background-color: #f2f2f2;
 }
 
+.meta-data .out input {
+  margin-left: 19px;
+}
+
 .appointment-form input[type=month] {
-  width: 295px;
+  width: 297px;
   height: 38px;
   padding-left: 10px;
   padding-right: 40px;
@@ -389,7 +400,7 @@ h2 {
   content: "";
   position: absolute;
   top: 50%;
-  left: 95%;
+  left: 94%;
   width: 22px;
   height: 22px;
   transform: translate(-50%, -50%);
@@ -438,14 +449,13 @@ h2 {
 
 .meta-btn input {
   display: block;
-  padding: 16px 203px;
+  padding: 16px 202px;
   margin: 0 auto;
   margin-bottom: 56px;
   margin-top: 38px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-/*  letter-spacing: 2px;*/
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   vertical-align: top;
   color: #ffffff;
@@ -463,7 +473,7 @@ h2 {
   color: rgba(136, 182, 209, 1);
 }
 
-/* Ð²Ñ‚Ð¾Ñ€Ð°Ñ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°*/
+/* ÃÂ²Ã‘â€šÃÂ¾Ã‘â‚¬ÃÂ°Ã‘Â Ã‘ÂÃ‘â€šÃ‘â‚¬ÃÂ°ÃÂ½ÃÂ¸Ã‘â€ ÃÂ°*/
 
 .produce-product {
   position: relative;
@@ -894,9 +904,14 @@ display: inline-block;
   }
 
 .main-footer {
+  margin-top: 18px;
   color: #000000;
   background: #ffffff;
   font-size: 0;
+}
+
+.main-footer-item {
+  margin-top: 0;
 }
 
 .box {
@@ -1000,33 +1015,26 @@ display: inline-block;
   vertical-align: top;
   text-align: center;
   width: 33%;
-  color: #6a6a69;
 }
 
 .icon-html p {
-  display: inline-block;
-  vertical-align:top;
-  margin-right: 3px;
+  text-align: left;
   font-size: 14px;
   line-height: 26px;
-  padding-top: 2px;
+  text-indent: 100px;
+  padding-top: 5px;
+  color: #6a6a69;
 }
 
 .icon-html {
   position: relative;
 }
 
-a .html-logo {
-  display: inline-block;
-  vertical-align:top;
-  padding-top: 12px;
-}
-
 .html-academy {
   position: absolute;
-  display: inline-block;
-  vertical-align: middle;
   text-decoration: none;
+  top: 30px;;
+  left: 237px;
   transform: translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
