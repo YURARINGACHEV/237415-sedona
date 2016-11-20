@@ -836,6 +836,7 @@ input[type=checkbox] {
 .holder-item {
   margin: 0 auto;
   padding: 30px 0;
+  padding-bottom: 20px;
   width: 1056px;
 
 }
@@ -881,7 +882,6 @@ input[type=checkbox] {
 }
 
 .aside-item .cost-item {
-  display: block;
   float: right;
 }
 
@@ -938,7 +938,6 @@ input[type=checkbox] {
 
 .pic .rating {
   display: inline-block;
-  margin-left: px;
   margin-top: 50px;
   padding: 4px 16px;
   background-color: #f2f2f2;
