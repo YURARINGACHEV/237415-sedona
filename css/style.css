@@ -6,6 +6,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   text-transform: uppercase;
+  background-color: #f2f2f2;
 }
 h2 {
   color: #000000;
@@ -24,6 +25,8 @@ h2 {
 .container {
   margin: 0 auto;
   width: 1200px;
+  box-shadow: 5px 0 25px 0 #dbdbdb,
+   -5px 0 25px 0 #dbdbdb;
 }
 
 .page-header {
@@ -87,7 +90,19 @@ h2 {
 }
 
 .navigation a.active {
-  color: #d6d0cc;
+  color: #766357;
+}
+
+.navigation a.active:hover {
+  color: #604e43;
+}
+
+.navigation a.active:active {
+  color: #b2b2b2;
+}
+
+.main-container {
+  background-color: #ffffff;
 }
 
 .page-sedona {
@@ -231,7 +246,6 @@ h2 {
 }
 
 .benefits {
-  min-height: 257px;
   text-align: center;
   font-size: 0;
   margin-bottom: 56px;
@@ -241,9 +255,9 @@ h2 {
   display: inline-block;
   vertical-align: top;
   width: 400px;
+  min-height: 257px;
   background: #eeeeee;
   font-size: 14px;
-
 }
 
 .benefits-item h2 {
@@ -286,11 +300,12 @@ h2 {
 
 .meta-sedona {
   position: relative;
+  background-color: #ffffff;
 }
 
 .meta-item {
   position: absolute;
-  top: -87px;
+  top: -88px;
   left: 317px;
   margin: 0 auto;
   width: 570px;
@@ -301,11 +316,11 @@ h2 {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  padding: 30px 165px;
+  padding: 30px 140px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
@@ -314,13 +329,11 @@ h2 {
   border: none;
   cursor: pointer;
 }
-
 .appointment-form {
   display: block;
   width: 459px;
   margin: 0 auto;
   margin-top: 39px;
-
 }
 
 .appointment-form label {
@@ -332,10 +345,10 @@ h2 {
 .appointment-form input {
   font-size: 14px;
   line-height: 24px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
-  margin: 15px 0;
+  margin: 14px 0;
   margin-left: 23px;
   border: none;
   background-color: #f2f2f2;
@@ -345,22 +358,22 @@ h2 {
   margin-left: 19px;
 }
 
-.appointment-form input[type=month] {
+.appointment-form input[type=text] {
   width: 297px;
   height: 38px;
   padding-left: 10px;
   padding-right: 40px;
 }
 
-.appointment-form .date {
+.appointment-form  {
   position: relative;
 }
 
-.appointment-form .date::before {
+.calendar::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 94%;
+  top: 35px;
+  left: 439px;
   width: 22px;
   height: 22px;
   transform: translate(-50%, -50%);
@@ -369,17 +382,43 @@ h2 {
   background-position: -10px -10px;
 }
 
-.appointment-form .date:hover::before {
+.out::before {
+  content: "";
+  position: absolute;
+  top: 101px;
+  left: 439px;
+  width: 22px;
+  height: 22px;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+}
+
+.calendar:hover::before {
   width: 21px;
   height: 22px;
   background-position: -10px -94px;
 }
 
-.appointment-form .date:active::before {
+.calendar:active::before {
   width: 21px;
   height: 22px;
   background-position: -10px -52px;
 }
+
+.out:hover::before {
+  width: 21px;
+  height: 22px;
+  background-position: -10px -94px;
+}
+
+.out:active::before {
+  width: 21px;
+  height: 22px;
+  background-position: -10px -52px;
+}
+
 
 .appointment-form input:hover {
   background-color: #ebebeb;
@@ -390,14 +429,14 @@ h2 {
   border-color: #e5e5e5;
 }
 
-.appointment-form input[type=text] {
+.appointment-form input[type=number] {
   padding:0 15px;
   text-align: center;
   width: 85px;
   height: 38px;
 }
 
-.adult input[type=text] {
+.adult input[type=number] {
   position: relative;
   margin-left: 40px;
   margin-right: 50px;
@@ -411,55 +450,61 @@ h2 {
  .minus {
   position: absolute;
   display: block;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
+  background-color: #a9a9a9;
   top: 7px;
   left: 125px;
   width: 12px;
   height: 3px;
-  background-position: -10px -1075px;
   cursor: pointer;
   border: none;
   z-index: 2;
 }
 
  .minus:hover {
-   width: 12px;
-   height: 3px;
-   background-position: -10px -1121px;
+background-color: #000000;
  }
 
  .minus:active {
-   width: 12px;
-   height: 3px;
-   background-position: -10px -1098px;
+   background-color: #81b3d2;
  }
 
  .plus {
   position: absolute;
   display: block;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  top: 3px;
-  left: 205px;
-  width: 11px;
-  height: 11px;
-  background-position: -10px -1228px;
+  background-color: #a9a9a9;
+  top: 6px;
+  left: 200px;
+  width: 13px;
+  height: 3px;
   cursor: pointer;
   border: none;
   z-index: 2;
 }
 
- .plus:hover {
-   width: 11px;
-   height: 11px;
-   background-position: -10px -1290px;
+ .plus::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 5px;
+  width: 3px;
+  height: 11px;
+  background-color: #a9a9a9;
+ }
+
+.plus:hover {
+  background-color: #000000;
+ }
+
+.plus:hover::before  {
+  background-color: #000000;
  }
 
  .plus:active {
-   width: 11px;
-   height: 11px;
-   background-position: -10px -1259px;
+   background-color: #81b3d2;
+ }
+
+ .plus:active::before {
+   background-color: #81b3d2;
  }
 
 .children {
@@ -468,27 +513,26 @@ h2 {
 }
 
 .minus-item {
-  left: 75px;
+  left: 77px;
 }
 
 .plus-item {
-  left: 155px;
+  left: 152px;
 }
-
 .children input[type=text] {
   margin-left: 25px;
 }
 
 .meta-btn input {
   display: block;
-  padding: 16px 202px;
+  padding: 16px 195px;
   margin: 0 auto;
   margin-bottom: 56px;
   margin-top: 38px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", sans-serif;
   vertical-align: top;
   color: #ffffff;
   text-transform: uppercase;
@@ -510,7 +554,7 @@ h2 {
 
 .produce-product {
   width: 100%;
-  height: 219px;
+  height: 218px;
   background-image: url("../img/filter-background-1.jpg");
   background-repeat: no-repeat;
 }
@@ -718,7 +762,6 @@ input[type=checkbox] {
 }
 
 .main-text {
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .text-container {
@@ -726,7 +769,7 @@ input[type=checkbox] {
   position: relative;
   z-index: 5;
   margin-top: 20px;
-  margin-bottom: 22px;
+  padding-bottom: px;
   border-bottom: 2px solid #fefefe;
   font-size: 0;
 }
@@ -897,7 +940,7 @@ input[type=checkbox] {
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 1px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
   text-decoration: none;
   color: #ffffff;
@@ -963,8 +1006,8 @@ input[type=checkbox] {
 }
 
 .main-footer {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 18px;
+  padding-bottom: 30px;
   color: #000000;
   background: #ffffff;
   font-size: 0;
@@ -980,7 +1023,7 @@ input[type=checkbox] {
   vertical-align: top;
   text-align: center;
   width: 33%;
-  padding: 16px 0;
+  padding: 17px 0;
   color: #262626;
 }
 
@@ -1077,7 +1120,7 @@ input[type=checkbox] {
   text-align: left;
   font-size: 14px;
   line-height: 26px;
-  text-indent: 100px;
+  text-indent: 102px;
   padding-top: 5px;
   color: #6a6a69;
 }
