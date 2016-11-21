@@ -25,6 +25,12 @@ h2 {
 .container {
   margin: 0 auto;
   width: 1200px;
+}
+
+.box-shadow {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
   box-shadow: 5px 0 25px 0 #dbdbdb,
    -5px 0 25px 0 #dbdbdb;
 }
@@ -308,6 +314,7 @@ h2 {
   top: -88px;
   left: 317px;
   margin: 0 auto;
+  z-index: 2;
   width: 570px;
   background: #ffffff;
 }
@@ -348,7 +355,7 @@ h2 {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
-  margin: 14px 0;
+  margin: 15px 0;
   margin-left: 23px;
   border: none;
   background-color: #f2f2f2;
@@ -358,11 +365,13 @@ h2 {
   margin-left: 19px;
 }
 
-.appointment-form input[type=text] {
-  width: 297px;
-  height: 38px;
+.appointment-form input:nth-child(1)[type=text],
+.appointment-form input:nth-child(2) {
+  text-align: left;
   padding-left: 10px;
   padding-right: 40px;
+  width: 297px;
+  height: 38px;
 }
 
 .appointment-form  {
@@ -429,14 +438,14 @@ h2 {
   border-color: #e5e5e5;
 }
 
-.appointment-form input[type=number] {
+.appointment-form input[type=text] {
   padding:0 15px;
   text-align: center;
   width: 85px;
   height: 38px;
 }
 
-.adult input[type=number] {
+.adult input[type=text] {
   position: relative;
   margin-left: 40px;
   margin-right: 50px;
@@ -589,25 +598,7 @@ input[type=checkbox] {
   display: block;
   padding-bottom: 25px;
 }
-
 .login-checkbox input[type="checkbox"] + .checkbox-indicator {
-  position: absolute;
-  top: -2px;
-  left: 0;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  width: 26px;
-  height: 22px;
-  background-position: -10px -136px;
-}
-
-.login-checkbox input[type="checkbox"] + .checkbox-indicator:hover {
-  width: 26px;
-  height: 22px;
-  background-position: -10px -178px;
-}
-
-.login-checkbox-no input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: -2px;
   left: 0;
@@ -618,15 +609,27 @@ input[type=checkbox] {
   background-position: -10px -1186px;
 }
 
-.login-checkbox-no input[type="checkbox"] + .checkbox-indicator:hover {
+.login-checkbox input[type="checkbox"] + .checkbox-indicator:hover {
   width: 22px;
   height: 22px;
   background-position: -10px -1144px;
 }
 
+.login-checkbox input[type="checkbox"]:checked  + .checkbox-indicator {
+  width: 26px;
+  height: 22px;
+  background-position: -10px -136px;
+}
+
+login-checkbox input[type="checkbox"] + .checkbox-indicator:hover {
+  width: 26px;
+  height: 22px;
+  background-position: -10px -178px;
+}
+
 .filter-range:nth-child(1) {
   width: 20%;
-  margin-right: 40px;
+  margin-right: 44px;
 }
 
 .filter-range:nth-child(2) {
@@ -650,6 +653,7 @@ input[type=checkbox] {
 }
 
 .filter-range-ite {
+  margin-left: 4px;
   margin-bottom: 10px;
 }
 
@@ -657,7 +661,7 @@ input[type=checkbox] {
   position: relative;
   height: 32px;
   width: 315px;
-  margin-left: 10px;
+  margin-left: 11px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -768,9 +772,9 @@ input[type=checkbox] {
   float: left;
   position: relative;
   z-index: 5;
-  margin-top: 20px;
-  padding-bottom: px;
-  border-bottom: 2px solid #fefefe;
+  margin-top: 15px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #e5e5e5;
   font-size: 0;
 }
 
@@ -827,7 +831,7 @@ input[type=checkbox] {
 
 .control-item {
   float: right;
-  margin-right: 69px;
+  margin-right: 62px;
   cursor: pointer;
   font-size: 14px;
 }
@@ -840,7 +844,7 @@ input[type=checkbox] {
   display: inline-block;
   vertical-align: middle;
   margin: 0 5px;
-  margin-top: 10px;
+  margin-top: 16px;
   font-size: 0;
   text-decoration: none;
   transform: translate(-50%, -50%);
@@ -849,6 +853,18 @@ input[type=checkbox] {
   width: 11px;
   height: 10px;
   background-position: -10px -913px;
+}
+
+.control-item span:hover {
+  width: 11px;
+  height: 10px;
+  background-position: -10px -973px;
+}
+
+.control-item span:active {
+  width: 11px;
+  height: 10px;
+  background-position: -10px -943px;
 }
 
 .control-item span:last-child {
@@ -874,12 +890,12 @@ input[type=checkbox] {
 
 .holder {
   min-height: 454px;
+  background-color: #ffffff;
 }
 
 .holder-item {
   margin: 0 auto;
-  padding: 30px 0;
-  padding-bottom: 20px;
+  padding: 29px 0;
   width: 1056px;
 
 }
@@ -888,11 +904,14 @@ input[type=checkbox] {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.holder-item {
+}
+
 .holder-item img {
   float: left;
   height: 90px;
   width: 135px;
-  margin-right: 30px;
+  margin-right: 31px;
 }
 
 .holder-item a {
@@ -935,11 +954,10 @@ input[type=checkbox] {
 
 .block-btn a {
   display: inline-block;
-  padding: 3px 15px;
+  padding: 3px 17px;
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
-  letter-spacing: 1px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
   text-decoration: none;
@@ -972,7 +990,7 @@ input[type=checkbox] {
 
 .pic {
   float: right;
-  width: 115px;
+  width: 113px;
 }
 
 .pic .stars {
@@ -981,17 +999,25 @@ input[type=checkbox] {
 
 .pic .rating {
   display: inline-block;
-  margin-top: 50px;
-  padding: 4px 16px;
+  text-align: center;
+  margin-top: 42px;
+  margin-left: 4px;
+  padding: 3px 0;
+  width: 111px;
   background-color: #f2f2f2;
 }
 
 .stars span {
   display: inline-block;
+  margin-left: 1px;
   width: 18px;
   height: 17px;
   background-position: -10px -1321px;
   background-image: url("../img/sprite.png");
+}
+
+.stars .stars-1 {
+  background-image: none;
 }
 
 .stars .stars-1-2,
@@ -1005,12 +1031,25 @@ input[type=checkbox] {
   background-image: none;
 }
 
+.img-map {
+  position: relative;
+  z-index: 1;
+}
+
 .main-footer {
-  padding-top: 18px;
+  padding-top: 28px;
   padding-bottom: 30px;
   color: #000000;
-  background: #ffffff;
+  background-color: #ffffff;
   font-size: 0;
+}
+
+.main-footer-item {
+  position: absolute;
+  bottom: 6px;
+  z-index: 50;
+  background: rgba(255,255,255, 0.9);
+  padding-top: 29px;
 }
 
 .box {
@@ -1047,8 +1086,8 @@ input[type=checkbox] {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 45px;
-  height: 49px;
+  width: 46px;
+  height: 48px;
   font-size: 0;
   text-decoration: none;
   background: #81b3d2;
@@ -1057,7 +1096,7 @@ input[type=checkbox] {
 .social-btn::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-image: url("../img/sprite.png");
@@ -1120,8 +1159,8 @@ input[type=checkbox] {
   text-align: left;
   font-size: 14px;
   line-height: 26px;
-  text-indent: 102px;
-  padding-top: 5px;
+  text-indent: 100px;
+  padding-top: 4px;
   color: #6a6a69;
 }
 
