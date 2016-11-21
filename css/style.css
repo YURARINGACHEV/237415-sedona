@@ -609,22 +609,22 @@ input[type=checkbox] {
   background-position: -10px -1186px;
 }
 
-.login-checkbox input[type="checkbox"] + .checkbox-indicator:hover {
+.login-checkbox input[type="checkbox"] + .checkbox-indicator:active {
   width: 22px;
   height: 22px;
   background-position: -10px -1144px;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator:active {
+  width: 26px;
+  height: 22px;
+  background-position: -10px -178px;
 }
 
 .login-checkbox input[type="checkbox"]:checked  + .checkbox-indicator {
   width: 26px;
   height: 22px;
   background-position: -10px -136px;
-}
-
-login-checkbox input[type="checkbox"] + .checkbox-indicator:hover {
-  width: 26px;
-  height: 22px;
-  background-position: -10px -178px;
 }
 
 .filter-range:nth-child(1) {
