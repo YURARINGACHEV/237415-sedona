@@ -12,7 +12,7 @@ h2 {
   color: #000000;
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: 510;
+  font-weight: 600;
   font-size: 21px;
 }
 
@@ -56,7 +56,7 @@ h2 {
   margin: 0;
   padding: 0;
   font-size: 0;
-  font-weight: bold;
+  font-weight: 600;
   list-style: none;
 }
 
@@ -133,14 +133,14 @@ h2 {
   margin: 0 auto;
   margin-bottom: 45px;
   padding: 75px 0;
-  padding-bottom: 95px;
+  padding-bottom: 93px;
 }
 
 .title {
   text-align: center;
   width: 546px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 }
 
 .title h2 {
@@ -169,7 +169,7 @@ h2 {
   margin-bottom: 10px;
   font-size: 21px;
   line-height: 21px;
-  font-weight: 530;
+  font-weight: 600;
   color: #ffffff;
 }
 
@@ -241,7 +241,7 @@ h2 {
   margin-bottom: 23px;
   font-size: 21px;
   line-height: 21px;
-  font-weight: 530;
+  font-weight: 600;
 }
 
 .features-item p {
@@ -269,11 +269,11 @@ h2 {
 .benefits-item h2 {
   display: block;
   margin: 0 120px;
-  margin-top: 18px;
+  margin-top: 17px;
   padding-top: 30px;
   font-size: 21px;
   line-height: 21px;
-  font-weight: 510;
+  font-weight: 600;
 }
 
 .benefits-item p {
@@ -294,7 +294,7 @@ h2 {
 .title-item h2 {
   font-size: 30px;
   line-height: 24px;
-  font-weight: 510;
+  font-weight: 600;
   color: #000000;
 }
 
@@ -312,7 +312,7 @@ h2 {
 .meta-item {
   position: absolute;
   top: -88px;
-  left: 317px;
+  left: 315px;
   margin: 0 auto;
   z-index: 2;
   width: 570px;
@@ -324,7 +324,7 @@ h2 {
   vertical-align: middle;
   text-align: center;
   padding: 30px 140px;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 21px;
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -346,7 +346,7 @@ h2 {
 .appointment-form label {
   font-size: 14px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .appointment-form input {
@@ -368,9 +368,9 @@ h2 {
 .appointment-form input:nth-child(1)[type=text],
 .appointment-form input:nth-child(2) {
   text-align: left;
-  padding-left: 10px;
+  padding-left: 11px;
   padding-right: 40px;
-  width: 297px;
+  width: 296px;
   height: 38px;
 }
 
@@ -439,9 +439,9 @@ h2 {
 }
 
 .appointment-form input[type=text] {
-  padding:0 15px;
+  padding: 0 30px;
   text-align: center;
-  width: 85px;
+  width: 55px;
   height: 38px;
 }
 
@@ -461,8 +461,8 @@ h2 {
   display: block;
   background-color: #a9a9a9;
   top: 7px;
-  left: 125px;
-  width: 12px;
+  left: 123px;
+  width: 11px;
   height: 3px;
   cursor: pointer;
   border: none;
@@ -482,7 +482,7 @@ background-color: #000000;
   display: block;
   background-color: #a9a9a9;
   top: 6px;
-  left: 200px;
+  left: 198px;
   width: 13px;
   height: 3px;
   cursor: pointer;
@@ -538,7 +538,7 @@ background-color: #000000;
   margin: 0 auto;
   margin-bottom: 56px;
   margin-top: 38px;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 21px;
   line-height: 26px;
   font-family: "PT Sans", sans-serif;
@@ -649,7 +649,7 @@ input[type=checkbox] {
   font-size: 16px;
   line-height: 21px;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .filter-range-ite {
@@ -682,7 +682,8 @@ input[type=checkbox] {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 21px;
+  padding-top: 5px;
   vertical-align: top;
   cursor: pointer;
 }
@@ -812,6 +813,7 @@ input[type=checkbox] {
 
 .text-item span {
   color: #000000;
+  cursor: pointer;
   border-bottom: 1px dotted #81b3d2;
 }
 
@@ -820,15 +822,23 @@ input[type=checkbox] {
   border: none;
 }
 
-.text-item span:last-child:hover {
+.text-item span:nth-child(2):hover {
   color: #81b3d2;
 }
 
-.text-item span:last-child:active {
+.text-item span:nth-child(2):active {
   color: #444444;
   border: none;
 }
 
+.text-item span:nth-child(3):hover {
+  color: #81b3d2;
+}
+
+.text-item span:nth-child(3):active {
+  color: #444444;
+  border: none;
+}
 .control-item {
   float: right;
   margin-right: 62px;
@@ -874,18 +884,6 @@ input[type=checkbox] {
   width: 11px;
   height: 10px;
   background-position: -10px -675px;
-}
-
-.control-item span:last-child:hover {
-  width: 11px;
-  height: 10px;
-  background-position: -10px -735px;
-}
-
-.control-item span:last-child:active {
-  width: 11px;
-  height: 10px;
-  background-position: -10px -705px;
 }
 
 .holder {
@@ -955,7 +953,7 @@ input[type=checkbox] {
 .block-btn a {
   display: inline-block;
   padding: 3px 17px;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 14px;
   line-height: 21px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1069,7 +1067,7 @@ input[type=checkbox] {
 .footer-sedona a {
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 600;
   color: #000000;
   text-decoration: none;
 }
