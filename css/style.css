@@ -12,7 +12,7 @@ h2 {
   color: #000000;
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 21px;
 }
 
@@ -56,7 +56,7 @@ h2 {
   margin: 0;
   padding: 0;
   font-size: 0;
-  font-weight: 600;
+  font-weight: 700;
   list-style: none;
 }
 
@@ -169,7 +169,7 @@ h2 {
   margin-bottom: 10px;
   font-size: 21px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 700;
   color: #ffffff;
 }
 
@@ -241,7 +241,7 @@ h2 {
   margin-bottom: 23px;
   font-size: 21px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .features-item p {
@@ -273,7 +273,7 @@ h2 {
   padding-top: 30px;
   font-size: 21px;
   line-height: 21px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .benefits-item p {
@@ -294,7 +294,7 @@ h2 {
 .title-item h2 {
   font-size: 30px;
   line-height: 24px;
-  font-weight: 600;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -324,7 +324,7 @@ h2 {
   vertical-align: middle;
   text-align: center;
   padding: 30px 140px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -346,7 +346,7 @@ h2 {
 .appointment-form label {
   font-size: 14px;
   line-height: 26px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .appointment-form input {
@@ -459,61 +459,57 @@ h2 {
  .minus {
   position: absolute;
   display: block;
-  background-color: #a9a9a9;
   top: 7px;
-  left: 123px;
-  width: 11px;
+  left: 127px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 12px;
   height: 3px;
+  background-position: -10px -1075px;
+  font-size: 14px;
+  line-height: 26px;
   cursor: pointer;
   border: none;
   z-index: 2;
 }
 
  .minus:hover {
-background-color: #000000;
+   width: 12px;
+   height: 3px;
+   background-position: -10px -1121px;
  }
 
  .minus:active {
-   background-color: #81b3d2;
+   width: 12px;
+   height: 3px;
+   background-position: -10px -1098px;
  }
 
  .plus {
   position: absolute;
   display: block;
-  background-color: #a9a9a9;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
   top: 6px;
-  left: 198px;
-  width: 13px;
-  height: 3px;
+  left: 202px;
+  width: 11px;
+  height: 11px;
+  background-position: -10px -1251px;
   cursor: pointer;
   border: none;
   z-index: 2;
 }
 
- .plus::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: 5px;
-  width: 3px;
-  height: 11px;
-  background-color: #a9a9a9;
- }
-
 .plus:hover {
-  background-color: #000000;
- }
-
-.plus:hover::before  {
-  background-color: #000000;
+  width: 11px;
+  height: 11px;
+  background-position: -10px -1223px;
  }
 
  .plus:active {
-   background-color: #81b3d2;
- }
-
- .plus:active::before {
-   background-color: #81b3d2;
+   width: 11px;
+   height: 11px;
+   background-position: -10px -1290px;
  }
 
 .children {
@@ -522,12 +518,13 @@ background-color: #000000;
 }
 
 .minus-item {
-  left: 77px;
+  left: 79px;
 }
 
 .plus-item {
-  left: 152px;
+  left: 155px;
 }
+
 .children input[type=text] {
   margin-left: 25px;
 }
@@ -538,7 +535,7 @@ background-color: #000000;
   margin: 0 auto;
   margin-bottom: 56px;
   margin-top: 38px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   font-family: "PT Sans", sans-serif;
@@ -649,7 +646,7 @@ input[type=checkbox] {
   font-size: 16px;
   line-height: 21px;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .filter-range-ite {
@@ -788,7 +785,7 @@ input[type=checkbox] {
   margin-left: 73px;
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .text span {
   margin-left: 47px;
@@ -811,34 +808,29 @@ input[type=checkbox] {
   margin-right: 30px;
 }
 
-.text-item span {
-  color: #000000;
+.text-item .type,
+.text-item .rating {
+  color: #d6d6d6;
   cursor: pointer;
   border-bottom: 1px dotted #81b3d2;
 }
 
-.text-item span:first-child {
-  color: #81b3d2;
-  border: none;
-}
-
-.text-item span:nth-child(2):hover {
+.text-item .type:hover,
+.text-item .rating:hover {
   color: #81b3d2;
 }
 
-.text-item span:nth-child(2):active {
+.text-item .type:active,
+.text-item .rating:active {
   color: #444444;
   border: none;
 }
 
-.text-item span:nth-child(3):hover {
+.text-item .price {
   color: #81b3d2;
-}
-
-.text-item span:nth-child(3):active {
-  color: #444444;
   border: none;
 }
+
 .control-item {
   float: right;
   margin-right: 62px;
@@ -850,7 +842,8 @@ input[type=checkbox] {
   float: right;
 }
 
-.control-item span {
+.control-item .no-activ,
+.control-item .active-control {
   display: inline-block;
   vertical-align: middle;
   margin: 0 5px;
@@ -865,19 +858,19 @@ input[type=checkbox] {
   background-position: -10px -913px;
 }
 
-.control-item span:hover {
+.control-item .no-activ:hover {
   width: 11px;
   height: 10px;
   background-position: -10px -973px;
 }
 
-.control-item span:active {
+.control-item .no-activ:active {
   width: 11px;
   height: 10px;
   background-position: -10px -943px;
 }
 
-.control-item span:last-child {
+.control-item .active-control {
   transform: translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -1067,7 +1060,7 @@ input[type=checkbox] {
 .footer-sedona a {
   font-size: 21px;
   line-height: 26px;
-  font-weight: 600;
+  font-weight: 700;
   color: #000000;
   text-decoration: none;
 }
