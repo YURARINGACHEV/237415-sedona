@@ -1140,7 +1140,7 @@ input[type=checkbox] {
 }
 
 .icon-html p {
-  padding-top: 4px;
+  padding-top: 3px;
   text-align: left;
   font-size: 14px;
   line-height: 26px;
@@ -1155,14 +1155,14 @@ input[type=checkbox] {
 .html-academy {
   position: absolute;
   top: 30px;;
-  left: 237px;
+  left: 238px;
   width: 113px;
   height: 39px;
   text-decoration: none;
   transform: translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -10px -220px;
+  background-position: -12px -214px;
 }
 
 .html-academy:hover {
