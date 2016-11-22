@@ -1,19 +1,19 @@
 body {
   min-width: 1200px;
-  color: #333333;
   line-height: 21px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   text-transform: uppercase;
+  color: #333333;
   background-color: #f2f2f2;
 }
 h2 {
-  color: #000000;
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 21px;
+  color: #000000;
 }
 
 .clearfix::after {
@@ -37,8 +37,8 @@ h2 {
 
 .page-header {
   position: relative;
-  background: #ffffff;
   z-index: 2;
+  background: #ffffff;
 }
 
 .header-top {
@@ -83,8 +83,8 @@ h2 {
 }
 
 .navigation a {
-  color:#000000;
   text-decoration: none;
+  color:#000000;
 }
 
 .navigation a:hover {
@@ -112,16 +112,16 @@ h2 {
 }
 
 .page-sedona {
-  background: url("../img/page-sedona.jpg") no-repeat center top;
   position: relative;
+  background: url("../img/page-sedona.jpg") no-repeat center top;
 }
 
 .page-sedona::before {
   content: "";
   position: absolute;
+  display: block;
   top: 453px;
   left: 0;
-  display: block;
   width: 1200px;
   height: 57px;
   background: url("../img/1-shape.png") no-repeat center top;
@@ -137,10 +137,10 @@ h2 {
 }
 
 .title {
-  text-align: center;
   width: 546px;
   margin: 0 auto;
   margin-bottom: 52px;
+  text-align: center;
 }
 
 .title h2 {
@@ -157,8 +157,8 @@ h2 {
   float: left;
   padding-bottom: 27px;
   width: 400px;
-  color: #ffffff;
   text-align: center;
+  color: #ffffff;
   background-color: #81b3d2;
 }
 
@@ -190,20 +190,20 @@ h2 {
 }
 
 .features-item {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   vertical-align: top;
   width: 400px;
-  background: #ffffff;
   font-size: 14px;
+  background: #ffffff;
 }
 
 .features-item:nth-child(1)::before {
  content: "";
  position: absolute;
+ display: block;
  top: 60px;
  left: 162px;
- display: block;
  width: 755px;
  height: 75px;
  background-image: url("../img/icon-2.png");
@@ -213,9 +213,9 @@ h2 {
 .features-item:nth-child(2)::before {
  content: "";
  position: absolute;
+ display: block;
  top: 60px;
  left: 162px;
- display: block;
  width: 80px;
  height: 70px;
  background-image: url("../img/icon-3.png");
@@ -225,9 +225,9 @@ h2 {
 .features-item:nth-child(3)::before {
   content: "";
  position: absolute;
+ display: block;
  top: 58px;
  left: 167px;
- display: block;
  width: 70px;
  height: 80px;
  background-image: url("../img/icon-1.png");
@@ -252,9 +252,9 @@ h2 {
 }
 
 .benefits {
+  margin-bottom: 56px;
   text-align: center;
   font-size: 0;
-  margin-bottom: 56px;
 }
 
 .benefits-item {
@@ -262,8 +262,8 @@ h2 {
   vertical-align: top;
   width: 400px;
   min-height: 257px;
-  background: #eeeeee;
   font-size: 14px;
+  background: #eeeeee;
 }
 
 .benefits-item h2 {
@@ -313,28 +313,27 @@ h2 {
   position: absolute;
   top: -88px;
   left: 315px;
-  margin: 0 auto;
-  z-index: 2;
   width: 570px;
+  z-index: 2;
+  margin: 0 auto;
   background: #ffffff;
 }
 
 .meta-item a {
   display: inline-block;
-  vertical-align: middle;
-  text-align: center;
   padding: 30px 140px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
-  color: #ffffff;
+  vertical-align: middle;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #766357;
-  border: none;
   cursor: pointer;
+  background-color: #766357;
+  color: #ffffff;
+  border: none;
 }
 .appointment-form {
   display: block;
@@ -353,11 +352,11 @@ h2 {
   font-size: 14px;
   line-height: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
-  color: #000000;
   text-transform: uppercase;
   margin: 15px 0;
   margin-left: 23px;
   border: none;
+  color: #000000;
   background-color: #f2f2f2;
 }
 
@@ -367,11 +366,11 @@ h2 {
 
 .appointment-form input:nth-child(1)[type=text],
 .appointment-form input:nth-child(2) {
+  width: 296px;
+  height: 38px;
   text-align: left;
   padding-left: 11px;
   padding-right: 38px;
-  width: 296px;
-  height: 38px;
 }
 
 .appointment-form  {
@@ -461,16 +460,16 @@ h2 {
   display: block;
   top: 7px;
   left: 127px;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
+  z-index: 2;
   width: 12px;
   height: 3px;
-  background-position: -10px -1075px;
   font-size: 14px;
   line-height: 26px;
   cursor: pointer;
   border: none;
-  z-index: 2;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -10px -1075px;
 }
 
  .minus:hover {
@@ -488,16 +487,16 @@ h2 {
  .plus {
   position: absolute;
   display: block;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
+  z-index: 2;
   top: 6px;
   left: 202px;
   width: 11px;
   height: 11px;
-  background-position: -10px -1251px;
   cursor: pointer;
   border: none;
-  z-index: 2;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -10px -1251px;
 }
 
 .plus:hover {
@@ -555,8 +554,7 @@ h2 {
   color: rgba(136, 182, 209, 1);
 }
 
-/* ÃÂ²Ã‘â€šÃÂ¾Ã‘â‚¬ÃÂ°Ã‘Â Ã‘ÂÃ‘â€šÃ‘â‚¬ÃÂ°ÃÂ½ÃÂ¸Ã‘â€ ÃÂ°*/
-
+/*Вторая страница*/
 
 .produce-product {
   width: 100%;
@@ -595,15 +593,16 @@ input[type=checkbox] {
   display: block;
   padding-bottom: 25px;
 }
+
 .login-checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: -2px;
   left: 0;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
   width: 22px;
   height: 22px;
   background-position: -10px -1186px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
 }
 
 .login-checkbox input[type="checkbox"] + .checkbox-indicator:active {
@@ -678,9 +677,9 @@ input[type=checkbox] {
 
 .price-controls label {
   display: inline-block;
+  padding-top: 5px;
   font-size: 14px;
   line-height: 21px;
-  padding-top: 5px;
   vertical-align: top;
   cursor: pointer;
 }
@@ -707,10 +706,10 @@ input[type=checkbox] {
 }
 
 .range-controls .scale {
-  margin-left:20px;
+  margin-left: 20px;
   height: 2px;
   background: rgba(255, 255, 255, 0.3);
-  width:309px;
+  width: 309px;
 }
 
 .range-controls .bar {
@@ -763,12 +762,9 @@ input[type=checkbox] {
   background: #ffffff;
 }
 
-.main-text {
-}
-
 .text-container {
-  float: left;
   position: relative;
+  float: left;
   z-index: 5;
   margin-top: 15px;
   padding-bottom: 26px;
@@ -846,6 +842,8 @@ input[type=checkbox] {
 .control-item .active-control {
   display: inline-block;
   vertical-align: middle;
+  width: 11px;
+  height: 10px;
   margin: 0 5px;
   margin-top: 16px;
   font-size: 0;
@@ -853,8 +851,6 @@ input[type=checkbox] {
   transform: translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  width: 11px;
-  height: 10px;
   background-position: -10px -913px;
 }
 
@@ -871,11 +867,11 @@ input[type=checkbox] {
 }
 
 .control-item .active-control {
+  width: 11px;
+  height: 10px;
   transform: translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  width: 11px;
-  height: 10px;
   background-position: -10px -675px;
 }
 
@@ -888,14 +884,10 @@ input[type=checkbox] {
   margin: 0 auto;
   padding: 29px 0;
   width: 1056px;
-
 }
 
 .holder-border {
   border-bottom: 1px solid #e5e5e5;
-}
-
-.holder-item {
 }
 
 .holder-item img {
@@ -916,9 +908,9 @@ input[type=checkbox] {
 .aside-item h2 {
   margin: 0 0;
   padding: 0 0;
+  padding-bottom: 9px;
   font-size: 21px;
   line-height: 21px;
-  padding-bottom: 9px;
 }
 
 .aside-item h2:hover {
@@ -990,11 +982,11 @@ input[type=checkbox] {
 
 .pic .rating {
   display: inline-block;
-  text-align: center;
+  width: 111px;
   margin-top: 42px;
   margin-left: 4px;
   padding: 3px 0;
-  width: 111px;
+  text-align: center;
   background-color: #f2f2f2;
 }
 
@@ -1037,8 +1029,8 @@ input[type=checkbox] {
 
 .main-footer-item {
   position: absolute;
-  bottom: 6px;
   z-index: 50;
+  bottom: 6px;
   background: rgba(255,255,255, 0.9);
   padding-top: 29px;
 }
@@ -1050,10 +1042,10 @@ input[type=checkbox] {
 
 .footer-sedona {
   display: inline-block;
-  vertical-align: top;
-  text-align: center;
   width: 33%;
   padding: 17px 0;
+  vertical-align: top;
+  text-align: center;
   color: #262626;
 }
 
@@ -1067,18 +1059,18 @@ input[type=checkbox] {
 
 .footer-social {
   display: inline-block;
-  vertical-align: top;
-  text-align: center;
   width: 33%;
   padding: 7px 0;
+  vertical-align: top;
+  text-align: center;
 }
 
 .social-btn {
   position: relative;
-  display: inline-block;
-  vertical-align: top;
   width: 46px;
   height: 48px;
+  display: inline-block;
+  vertical-align: top;
   font-size: 0;
   text-decoration: none;
   background: #81b3d2;
@@ -1141,17 +1133,17 @@ input[type=checkbox] {
 
 .icon-html {
   display: inline-block;
+  width: 33%;
   vertical-align: top;
   text-align: center;
-  width: 33%;
 }
 
 .icon-html p {
+  padding-top: 4px;
   text-align: left;
   font-size: 14px;
   line-height: 26px;
   text-indent: 100px;
-  padding-top: 4px;
   color: #6a6a69;
 }
 
@@ -1161,14 +1153,14 @@ input[type=checkbox] {
 
 .html-academy {
   position: absolute;
-  text-decoration: none;
   top: 30px;;
   left: 237px;
+  width: 113px;
+  height: 39px;
+  text-decoration: none;
   transform: translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  width: 113px;
-  height: 39px;
   background-position: -10px -220px;
 }
 
