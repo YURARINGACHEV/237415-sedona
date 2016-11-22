@@ -8,6 +8,7 @@ body {
   color: #333333;
   background-color: #f2f2f2;
 }
+
 h2 {
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -488,7 +489,7 @@ h2 {
   position: absolute;
   display: block;
   z-index: 2;
-  top: 6px;
+  top: 3px;
   left: 202px;
   width: 11px;
   height: 11px;
