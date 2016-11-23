@@ -492,7 +492,7 @@ h2 {
   color: #a9a9a9;
 }*/
 
- .minus {
+.minus {
   position: absolute;
   display: block;
   top: 7px;
@@ -504,7 +504,7 @@ h2 {
   line-height: 26px;
   cursor: pointer;
   border: none;
-  background-color: #f2f2f2;
+  background-color: rgba(242,242,242, 0.1);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -10px -1075px;
@@ -513,13 +513,14 @@ h2 {
  .minus:hover {
    width: 10px;
    height: 3px;
-   background-position: -10px -1121px;
+   background-position: -11px -1121px;
  }
 
  .minus:active {
    width: 10px;
    height: 3px;
-   background-position: -10px -1098px;
+   background-color: #81b3d2;
+   background-position: -11px -1098px;
  }
 
  .minus-item {
@@ -576,7 +577,7 @@ h2 {
   font-weight: 700;
   cursor: pointer;
   border: none;
-  background-color: rgba(252,252,252, 0.1);
+  background-color: rgba(242,242,242, 0.1);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -10px -1251px;
