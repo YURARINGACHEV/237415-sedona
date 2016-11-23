@@ -500,37 +500,62 @@ h2 {
 .minus {
   position: absolute;
   display: block;
-  top: 7px;
-  left: 127px;
+  top: -10px;
+  left: 112px;
   z-index: 2;
-  width: 10px;
-  height: 3px;
+  width: 38px;
+  height: 38px;
   font-size: 14px;
   line-height: 26px;
   cursor: pointer;
   border: none;
-  background-color: rgba(242,242,242, 0.1);
+  background-color: #f2f2f2;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -10px -1075px;
+  background-position: 4px -1058px;
 }
 
+
  .minus:hover {
-   width: 10px;
-   height: 3px;
-   background-position: -11px -1121px;
+   width: 38px;
+  height: 38px;
+   background-position: 3px -1104px;
  }
 
  .minus:active {
-   width: 10px;
-   height: 3px;
-   background-color: #81b3d2;
-   background-position: -11px -1098px;
+   width: 38px;
+   height: 38px;
+   background-position: 3px -1080px;
  }
 
  .minus-item {
-   left: 79px;
+  position: absolute;
+  display: block;
+  top: -10px;
+  left: 64px;
+  z-index: 2;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  border: none;
+  background-color:#f2f2f2;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 4px -1058px;
  }
+
+ .minus-item:hover {
+  width: 38px;
+ height: 38px;
+  background-position: 3px -1104px;
+}
+
+.minus-item:active {
+  width: 38px;
+  height: 38px;
+  background-position: 3px -1080px;
+}
+
 /*
 .plus {
   position: absolute;
@@ -573,36 +598,64 @@ h2 {
   position: absolute;
   display: block;
   z-index: 3;
-  top: 3px;
-  left: 202px;
-  width: 11px;
-  height: 11px;
+  top: -10px;
+  left: 187px;
+  width: 38px;
+  height: 38px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   cursor: pointer;
   border: none;
-  background-color: rgba(242,242,242, 0.1);
+  background-color: #f2f2f2;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -10px -1251px;
+  background-position: 4px -1238px;
 }
 
 .plus:hover {
-  width: 11px;
-  height: 11px;
-  background-position: -10px -1223px;
+  width: 38px;
+  height: 38px;
+  background-position: 4px -1210px;
  }
 
 .plus:active {
-  width: 11px;
-  height: 11px;
-  background-position: -10px -1290px;
+  width: 38px;
+  height: 38px;
+  background-position: 4px -1277px;
+}
 
-}
 .plus-item {
-  left: 155px;
+    position: absolute;
+  display: block;
+  z-index: 3;
+  top: -10px;
+  left: 139px;
+  width: 38px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background-color: #f2f2f2;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 4px -1238px;
 }
+
+.plus-item:hover {
+  width: 38px;
+  height: 38px;
+  background-position: 4px -1210px;
+ }
+
+.plus-item:active {
+  width: 38px;
+  height: 38px;
+  background-position: 4px -1277px;
+}
+
 
 .children {
   position: relative;
