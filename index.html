@@ -104,22 +104,23 @@
               <a href="#">Поиск гостиницы в Седоне</a>
               <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
                 <div class="meta-data">
+                  <div class="date-item">
                     <label class="calendar">
                       Дата заезда:<input class="date" type="text" name="date" placeholder="24 апреля 2016">
                     </label>
                     <label class="out">
                       Дата выезда:<input class="date" type="text" name="date" placeholder="4 июня 2016">
                     </label>
-                    <label for="adult-id"></label>
-                    <label for="children-id"></label>
-                      <div class="adult ">
+                  </div>
+                    <div class="adult">
                       <button class="minus"></button>
-                      Взрослые:<input class="adult-item" type="text" name="total" placeholder="2"
+                      <label  for="adult-id">Взрослые:</label>
+                      <input  type="text" name="total" placeholder="2"
                       id="adult-id">
                       <button class="plus"></button>
-                      <button class=" minus-item"></button>
-                      Дети:<input class="children-item" type="text" name="total" placeholder="4"
-                      id="children-id">
+                      <button class="minus-item"></button>
+                      <label class="adult-item" for="children-id">Дети:</label>
+                      <input class="children-item" type="text" name="total" placeholder="4" id="children-id">
                       <button class="plus-item"></button>
                     </div>
                   </div>

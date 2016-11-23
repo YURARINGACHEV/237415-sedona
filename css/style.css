@@ -371,8 +371,7 @@ h2 {
   margin-left: 19px;
 }
 
-.appointment-form input:nth-child(1)[type=text],
-.appointment-form input:nth-child(2) {
+.appointment-form .date-item input[type=text] {
   width: 296px;
   height: 38px;
   text-align: left;
@@ -452,26 +451,31 @@ h2 {
 .appointment-form input[type=text] {
   padding: 0 30px;
   text-align: center;
-  width: 55px;
+  width: 53px;
   height: 38px;
 }
 
-.adult input:nth-child(2)[type=text] {
+.appointment-form .adult .children-item {
   position: relative;
-  left: 24px;
-  margin-right: 81px;
-  width: 49px;
+  left: 77px;
+  width: 55px;
 }
 
-.adult input[type=text]{
+.appointment-form .adult input[type=text]{
   position: relative;
-  margin-left: 20px;
+  margin-left: 37px;
   z-index: 1;
 }
 
 .adult {
   position: relative;
   display: inline-block;
+}
+
+.adult-item {
+  position: absolute;
+  left: 280px;
+  top: 20px;
 }
 /*.minus {
  position: absolute;
@@ -668,14 +672,6 @@ h2 {
   background-position: 4px -1277px;
 }
 
-.children {
-  position: relative;
-  z-index: 1;
-}
-
-.children input[type=text] {
-  margin-left: 25px;
-}
 
 .meta-btn input {
   display: block;
