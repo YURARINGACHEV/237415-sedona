@@ -32,8 +32,8 @@ h2 {
   position: relative;
   margin: 0 auto;
   width: 1200px;
-  box-shadow: 5px 0 25px 0 #dbdbdb,
-   -5px 0 25px 0 #dbdbdb;
+  box-shadow: 3px 0 7px 0 rgba(219,219,219,0.35),
+   -3px 0 7px 0 rgba(219,219,219,0.35);
 }
 
 .page-header {
@@ -456,45 +456,127 @@ h2 {
   position: relative;
 }
 
+/*.minus {
+ position: absolute;
+ display: block;
+ z-index: 3;
+ top: -3px;
+ left: -160px;
+ font-size: 20px;
+ font-weight: 700;
+ cursor: pointer;
+ border: none;
+ background-color: rgba(252,252,252, 0.1);
+ color: #a9a9a9;
+}
+
+.minus:hover {
+ color: #000000;
+}
+
+.minus:active {
+ color: #81b3d2;
+}
+
+.minus-item {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  top: -3px;
+  left: 73px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(252,252,252, 0.1);
+  color: #a9a9a9;
+}*/
+
  .minus {
   position: absolute;
   display: block;
   top: 7px;
   left: 127px;
   z-index: 2;
-  width: 12px;
+  width: 10px;
   height: 3px;
   font-size: 14px;
   line-height: 26px;
   cursor: pointer;
   border: none;
+  background-color: #f2f2f2;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -10px -1075px;
 }
 
  .minus:hover {
-   width: 12px;
+   width: 10px;
    height: 3px;
    background-position: -10px -1121px;
  }
 
  .minus:active {
-   width: 12px;
+   width: 10px;
    height: 3px;
    background-position: -10px -1098px;
  }
 
- .plus {
+ .minus-item {
+   left: 79px;
+ }
+/*
+.plus {
   position: absolute;
   display: block;
-  z-index: 2;
+  z-index: 3;
+  top: -3px;
+  left: -84px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(252,252,252, 0.1);
+  color: #a9a9a9;
+ }
+
+ .plus:hover {
+  color: #000000;
+ }
+
+ .plus:active {
+  color: #81b3d2;
+ }
+
+ .plus-item {
+   position: absolute;
+   display: block;
+   z-index: 3;
+   top: -3px;
+   left: 150px;
+   font-size: 20px;
+   font-weight: 700;
+   cursor: pointer;
+   border: none;
+   background-color: rgba(252,252,252, 0.1);
+   color: #a9a9a9;
+ }
+
+*/
+.plus {
+  position: absolute;
+  display: block;
+  z-index: 3;
   top: 3px;
   left: 202px;
   width: 11px;
   height: 11px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
   cursor: pointer;
   border: none;
+  background-color: rgba(252,252,252, 0.1);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -10px -1251px;
@@ -506,23 +588,19 @@ h2 {
   background-position: -10px -1223px;
  }
 
- .plus:active {
-   width: 11px;
-   height: 11px;
-   background-position: -10px -1290px;
- }
+.plus:active {
+  width: 11px;
+  height: 11px;
+  background-position: -10px -1290px;
+
+}
+.plus-item {
+  left: 155px;
+}
 
 .children {
   position: relative;
   z-index: 1;
-}
-
-.minus-item {
-  left: 79px;
-}
-
-.plus-item {
-  left: 155px;
 }
 
 .children input[type=text] {
@@ -839,7 +917,7 @@ input[type=checkbox] {
   float: right;
 }
 
-.control-item .no-activ,
+.control-item .up-activ,
 .control-item .active-control {
   display: inline-block;
   vertical-align: middle;
@@ -855,13 +933,13 @@ input[type=checkbox] {
   background-position: -10px -913px;
 }
 
-.control-item .no-activ:hover {
+.control-item .up-activ:hover {
   width: 11px;
   height: 10px;
   background-position: -10px -973px;
 }
 
-.control-item .no-activ:active {
+.control-item .up-activ:active {
   width: 11px;
   height: 10px;
   background-position: -10px -943px;
