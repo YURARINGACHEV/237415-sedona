@@ -289,7 +289,7 @@ h2 {
 }
 
 .title-item {
-  margin-bottom: 135px;
+  margin-bottom: 47px;
 }
 
 .title-item h2 {
@@ -305,18 +305,11 @@ h2 {
   line-height: 24px;
 }
 
-.meta-sedona {
-  position: relative;
-  background-color: #ffffff;
-}
-
 .meta-item {
-  position: absolute;
-  top: -88px;
-  left: 315px;
   width: 570px;
-  z-index: 2;
+  z-index: 4;
   margin: 0 auto;
+  padding-bottom: 1px;
   background: #ffffff;
 }
 
@@ -336,6 +329,7 @@ h2 {
   color: #ffffff;
   border: none;
 }
+
 .appointment-form {
   display: block;
   width: 459px;
@@ -343,39 +337,33 @@ h2 {
   margin-top: 39px;
 }
 
-.appointment-form label {
+.appointment-form {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.appointment-form div {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-}
-
-.appointment-form input {
+.date-item input {
   font-size: 14px;
   line-height: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
-  margin: 15px 0;
-  margin-left: 23px;
+  margin: 14px 0;
+  margin-left: 19px;
   border: none;
   color: #000000;
   background-color: #f2f2f2;
 }
 
-.meta-data .out input {
-  margin-left: 19px;
+.date-item .race  {
+  margin-left: 3px;
 }
 
 .appointment-form .date-item input[type=text] {
-  width: 296px;
-  height: 38px;
+  width: 294px;
+  height: 37px;
   text-align: left;
-  padding-left: 11px;
+  padding-left: 12px;
   padding-right: 38px;
 }
 
@@ -383,56 +371,57 @@ h2 {
   position: relative;
 }
 
-.calendar::before {
+.calendar {
   content: "";
   position: absolute;
   top: 35px;
   left: 439px;
   width: 22px;
   height: 22px;
+  cursor: pointer;
   transform: translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -10px -10px;
 }
 
-.out::before {
+.calendar-item{
   content: "";
   position: absolute;
   top: 101px;
   left: 439px;
   width: 22px;
   height: 22px;
+  cursor: pointer;
   transform: translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-position: -10px -10px;
 }
 
-.calendar:hover::before {
+.calendar:hover {
   width: 21px;
   height: 22px;
   background-position: -10px -94px;
 }
 
-.calendar:active::before {
+.calendar:active {
   width: 21px;
   height: 22px;
   background-position: -10px -52px;
 }
 
-.out:hover::before {
+.calendar-item:hover {
   width: 21px;
   height: 22px;
   background-position: -10px -94px;
 }
 
-.out:active::before {
+.calendar-item:active {
   width: 21px;
   height: 22px;
   background-position: -10px -52px;
 }
-
 
 .appointment-form input:hover {
   background-color: #ebebeb;
@@ -448,75 +437,46 @@ h2 {
   border-color: #e5e5e5;
 }
 
-.appointment-form input[type=text] {
+.appointment-form .adult input[type=text] {
   padding: 0 30px;
   text-align: center;
   width: 53px;
   height: 38px;
 }
 
-.appointment-form .adult .children-item {
-  position: relative;
-  left: 77px;
-  width: 55px;
-}
-
-.appointment-form .adult input[type=text]{
-  position: relative;
-  margin-left: 37px;
-  z-index: 1;
-}
-
 .adult {
   position: relative;
-  display: inline-block;
 }
 
-.adult-item {
-  position: absolute;
-  left: 280px;
-  top: 20px;
-}
-/*.minus {
- position: absolute;
- display: block;
- z-index: 3;
- top: -3px;
- left: -160px;
- font-size: 20px;
- font-weight: 700;
- cursor: pointer;
- border: none;
- background-color: rgba(252,252,252, 0.1);
- color: #a9a9a9;
-}
-
-.minus:hover {
- color: #000000;
-}
-
-.minus:active {
- color: #81b3d2;
-}
-
-.minus-item {
-  position: absolute;
-  display: block;
-  z-index: 3;
-  top: -3px;
-  left: 73px;
-  font-size: 20px;
-  font-weight: 700;
-  cursor: pointer;
+.adult input {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  margin: 15px 0;
+  margin-left: 25px;
   border: none;
-  background-color: rgba(252,252,252, 0.1);
-  color: #a9a9a9;
-}*/
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.adult .adult-item {
+    margin-right: 13px;
+}
+
+.adult .total-item {
+    margin-right: 50px;
+}
+
+.adult .children-item {
+    margin-left: 24px;
+}
+
 .minus {
   position: absolute;
   display: block;
   top: 15px;
-  left: 112px;
+  left: 113px;
   z-index: 2;
   width: 38px;
   height: 38px;
@@ -527,27 +487,26 @@ h2 {
   background-color: #f2f2f2;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: 4px -1058px;
+  background-position: 4px -1056px;
 }
-
 
 .minus:hover {
   width: 38px;
   height: 38px;
-  background-position: 3px -1104px;
+  background-position: 3px -1102px;
  }
 
 .minus:active {
   width: 38px;
   height: 38px;
-  background-position: 3px -1080px;
+  background-position: 3px -1079px;
  }
 
 .minus-item {
   position: absolute;
   display: block;
   top: 15px;
-  left: 343px;
+  left: 345px;
   z-index: 2;
   width: 38px;
   height: 38px;
@@ -556,66 +515,27 @@ h2 {
   background-color:#f2f2f2;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: 4px -1058px;
+  background-position: 5px -1056px;
   }
 
 .minus-item:hover {
   width: 38px;
   height: 38px;
-  background-position: 3px -1104px;
+  background-position: 4px -1102px;
 }
 
 .minus-item:active {
   width: 38px;
   height: 38px;
-  background-position: 3px -1080px;
+  background-position: 4px -1079px;
 }
 
-
-/*
-.plus {
-  position: absolute;
-  display: block;
-  z-index: 3;
-  top: -3px;
-  left: -84px;
-  font-size: 20px;
-  font-weight: 700;
-  cursor: pointer;
-  border: none;
-  background-color: rgba(252,252,252, 0.1);
-  color: #a9a9a9;
- }
-
- .plus:hover {
-  color: #000000;
- }
-
- .plus:active {
-  color: #81b3d2;
- }
-
- .plus-item {
-   position: absolute;
-   display: block;
-   z-index: 3;
-   top: -3px;
-   left: 150px;
-   font-size: 20px;
-   font-weight: 700;
-   cursor: pointer;
-   border: none;
-   background-color: rgba(252,252,252, 0.1);
-   color: #a9a9a9;
- }
-
-*/
 .plus {
   position: absolute;
   display: block;
   z-index: 3;
   top: 15px;
-  left: 187px;
+  left: 188px;
   width: 38px;
   height: 38px;
   font-size: 14px;
@@ -626,19 +546,19 @@ h2 {
   background-color: #f2f2f2;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: 4px -1238px;
+  background-position: 4px -1236px;
 }
 
 .plus:hover {
   width: 38px;
   height: 38px;
-  background-position: 4px -1210px;
+  background-position: 4px -1208px;
  }
 
 .plus:active {
   width: 38px;
   height: 38px;
-  background-position: 4px -1277px;
+  background-position: 4px -1275px;
 }
 
 .plus-item {
@@ -657,19 +577,19 @@ h2 {
   background-color: #f2f2f2;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: 4px -1238px;
+  background-position: 4px -1236px;
 }
 
 .plus-item:hover {
   width: 38px;
   height: 38px;
-  background-position: 4px -1210px;
+  background-position: 4px -1208px;
  }
 
 .plus-item:active {
   width: 38px;
   height: 38px;
-  background-position: 4px -1277px;
+  background-position: 4px -1275px;
 }
 
 
@@ -677,8 +597,8 @@ h2 {
   display: block;
   padding: 16px 195px;
   margin: 0 auto;
-  margin-bottom: 56px;
-  margin-top: 38px;
+  margin-bottom: 54px;
+  margin-top: 39px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -699,6 +619,16 @@ h2 {
   color: rgba(136, 182, 209, 1);
 }
 
+.meta-sedona {
+  position: relative;
+  z-index: 3;
+}
+
+.img-map {
+  position: absolute;
+  z-index: 1;
+  top: 86px;;
+}
 /*Вторая страница*/
 
 .produce-product {
@@ -1159,11 +1089,6 @@ input[type=checkbox] {
   background-image: none;
 }
 
-.img-map {
-  position: relative;
-  z-index: 1;
-}
-
 .main-footer {
   padding-top: 28px;
   padding-bottom: 30px;
@@ -1173,11 +1098,11 @@ input[type=checkbox] {
 }
 
 .main-footer-item {
-  position: absolute;
+  position: relative;
   z-index: 50;
-  bottom: 6px;
+  margin-top: 79px;
   background: rgba(255,255,255, 0.9);
-  padding-top: 29px;
+  padding-top: 28px;
 }
 
 .box {
@@ -1246,13 +1171,13 @@ input[type=checkbox] {
 .social-btn-fb::before {
   width: 10px;
   height: 19px;
-  background-position: -10px -765px;
+  background-position: -10px -766px;
 }
 
 .social-btn-fb:active::before {
   width: 10px;
   height: 19px;
-  background-position: -10px -804px;
+  background-position: -10px -805px;
 }
 
 
