@@ -367,18 +367,17 @@ h2 {
 
 .appointment-form-show {
   display:block;
-  animation: bounce 1s;
+  animation: root 0.6s;
 }
 
-@keyframes bounce {
+@keyframes root {
   0%   {
-    transform: translateY(-200px);
+    transform: translateY(400px);
   }
   100% {
     transform: translateY(0);
   }
 }
-
 
 .date-item input {
   font-size: 14px;
@@ -397,7 +396,7 @@ h2 {
 }
 
 .appointment-form .date-item input[type=text] {
-  width: 294px;
+  width: 292px;
   height: 37px;
   text-align: left;
   padding-left: 12px;
@@ -993,6 +992,7 @@ input[type=checkbox] {
 .holder-item {
   margin: 0 auto;
   padding: 29px 0;
+  padding-bottom: 30px;
   width: 1056px;
 }
 
@@ -1128,7 +1128,7 @@ input[type=checkbox] {
 }
 
 .main-footer {
-  padding-top: 30px;
+  padding-top: 29px;
   padding-bottom: 30px;
   color: #000000;
   background-color: #ffffff;
@@ -1242,6 +1242,49 @@ input[type=checkbox] {
 .icon-html {
   display: inline-block;
   width: 33%;
+  vertical-align: middle;
+}
+
+.icon-html p {
+  display: inline-block;
+  padding-top: 2px;
+  padding-right: 4px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  color: #6a6a69;
+}
+
+.icon-html a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 6px;
+  padding-left: 3px;
+  width: 113px;
+  height: 39px;
+  background-image: url("../img/html.png");
+  background-repeat: no-repeat;
+}
+
+.html-academy:hover {
+  width: 113px;
+  height: 39px;
+  background-image: url("../img/html-hover.png");
+  background-repeat: no-repeat;
+}
+
+.html-academy:active {
+  width: 113px;
+  height: 39px;
+  background-image: url("../img/html-active.png");
+  background-repeat: no-repeat;
+}
+
+/*
+.icon-html {
+  display: inline-block;
+  width: 33%;
   vertical-align: top;
   text-align: center;
 }
@@ -1272,9 +1315,11 @@ input[type=checkbox] {
   background-position: -12px -214px;
 }
 
-.html-academy:hover {
+.html-academy :hover {
   width: 113px;
   height: 39px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
   background-position: -10px -338px;
 }
 
@@ -1283,6 +1328,7 @@ input[type=checkbox] {
   height: 39px;
   background-position: -10px -279px;
 }
+*/
 
 /*Спрайты*/
 .sprite {
