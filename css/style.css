@@ -399,8 +399,9 @@ h2 {
   width: 292px;
   height: 37px;
   text-align: left;
-  padding-left: 12px;
   padding-right: 38px;
+  padding-left: 12px;
+
 }
 
 .calendar {
